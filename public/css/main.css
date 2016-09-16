@@ -4,6 +4,7 @@
 	height: auto;
 	margin-left: 10%;
 	border: 8px solid #fff;
+	background: lightblue;
 }
 #n-m-img {
 	width: 100%;
@@ -12,4 +13,54 @@
 }
 .n-m-nav {
 	height: auto;
+	background: #3b5998!Important;
+	color: #fff!Important;
+	text-align: center;
+}
+body {
+	background: #3b5998;
+    background: -webkit-linear-gradient(#3b5998, #fff); 
+    background: -o-linear-gradient(#3b5998, #fff);
+    background: -moz-linear-gradient(#3b5998, #fff);
+    background: linear-gradient(#3b5998, #fff);
+}
+.ad-mg-btm-0 {
+	margin-bottom: 0!Important;
+}
+.n-m-nav li a {
+	color: white!Important;
+}
+.n-m-b-heading {
+	width: 100%;
+	height: 50px;
+	background: #3b5998;
+	padding: 10px;
+	color: #fff;
+}
+.ad-bd {
+	border: 3px solid #777;
+	padding: 0!Important;
+	border-radius: 4px;
+}
+.ad-pd {
+	padding: 5px;
+}
+ul.templatemo-submenu li:hover {
+	background: #aaa;
+	list-style: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+ul.templatemo-submenu li:hover a {
+	text-decoration: none!Important;
+}
+.nav-width {
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+}
+@media screen and (max-width: 991px) {
+	.at-media-1 {
+		margin-top: 10px;
+	}
 }
