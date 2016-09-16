@@ -64,3 +64,44 @@ ul.templatemo-submenu li:hover a {
 		margin-top: 10px;
 	}
 }
+
+
+.scroll-slow {
+ height: 35px;	
+ overflow: hidden;
+ position: relative;
+}
+.scroll-slow p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ -moz-animation: scroll-slow 25s linear infinite;
+ -webkit-animation: scroll-slow 25s linear infinite;
+ animation: scroll-slow 25s linear infinite;
+}
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-slow {
+ 0%   { 
+ -moz-transform: translateX(100%);
+ -webkit-transform: translateX(100%);
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); 
+ -webkit-transform: translateX(-100%); 
+ transform: translateX(-100%); 
+ }
+}
