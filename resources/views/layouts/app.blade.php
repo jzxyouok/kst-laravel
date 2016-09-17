@@ -22,7 +22,6 @@
     </script>
 </head>
 <body>
-    <div class="col-md-10 col-md-offset-1">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -82,7 +81,6 @@
             </div>
         </div>
     </nav>
-    </div>
 
     @yield('content')
 

@@ -43,19 +43,19 @@
 					</ul>	
 			    </div>
 			</nav>
-			<div class="scroll-slow" style="color: #990000;font-size:22px;">
-			<p><b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>	</p>
-			</div>
+			<marquee style="color: #990000; font-size:22px;">
+				<b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>
+			</marquee>
 			<div id="n-m-body" style="margin-top: 15px;">
-				<div class="col-md-3 ad-bd">
+				<div class="col-md-3 ad-bd-1">
 					<div class="n-m-b-heading">
 						<b>Dashboard</b>
 					</div>
-					<div class="ad-pd">
+					<div class="ad-pd n-m-b-body">
 						<ul class="templatemo-submenu">
 			                <li><a href="#">
 			                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>
-			                <li> <a href="#">
+			                <li><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
 			                <li><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
@@ -67,86 +67,60 @@
 					</div>
 				</div>
 				<div class="col-md-9 ad-bd at-media-1">
-					<div class="n-m-b-heading">
-						
-					</div>
+					<div class="n-m-b-heading"></div>
 					<div class="ad-pd">
-					<div class="col-sm-6 col-md-0 col-md-offset-0" style="padding-top: 20px;">
-<img src="{{asset('images/kannan.jpg')}}" class= "img-circle">
-</div>
-		<div  style="height:500px;">
-  			<div class="col-md-6" style="padding-top: 5px;" >
-				<div class="content_white" style="line-height: 1em;color: #4700b3;">
-					<h1> ശ്രീകൃഷ്ണധ്യാനം  </h1>
-					<h4>കസ്തൂരി തിലകം ലലാട ഫലകേ
-                        <br>
-                        വക്ഷസ്ഥലേ കൗസ്തുഭം
-                        <br>
-                        നാസാഗ്രേ നവ  മൗക്തികം കരതലേ
-                        <br>
-                        വേണും കരേ കങ്കണം
-                        <br>
-                        സർവ്വാംഗേ ഹരിചന്ദനം ചകലയൻ
-                        <br>
-                        കണ്ധെ ച മുക്താ വലീം
-                        <br>
-                        ഗോപസ്ത്രീ പരിവേഷ്ട്ടിതോ വിജയതേ
-                        <br>
-                        ഗോപലച്ചുധാമണി
-                        <br>
-                        <br>
-                        സാരം :	നെറ്റിയിൽ കസ്തൂരിതിലകം.
-                        <br>
-                        മാറിൽ കൗസ്തുഭമണി, മൂക്കിൽ പവിഴം
-                        <br>
-                        പതിച്ച നാസാമണി, കരതളിരുകളിൽ
-                        <br>
-                        വേണു, കൈത്തണ്ടയിൽ  കങ്കണം
-                        <br>
-                        ദേഹമാസകലം ചന്ദനം, കഴുത്തിൽ
-                        <br>
-                        മുത്തുമാല, അങ്ങനെ ഗോപാലന്മാർക്കു
-                        <br>
-                        ശിരോലങ്കാരമായ കൃഷ്ണൻ
-                        <br>
-                        ഗോപാംഗനകളാൽ ചുറ്റപ്പെട്ട്  വിജയിച്ചരുളുന്നു.
-                        <br>
-                        </h4>
-		   		</div>
-			</div>
-
-			<div class="col-md-6" >
-				<div class="container-top" >
-	        </div> 
-	                            </div> 
-	                        </div>
-	                    </div> 
-	                </fieldset>
-	            </form>
-	        </div> 
-	            </div>
-	        </div> 
-	    </div> 
-	</div>  
-</div>
-			</div>
-		</div>
-
-		   </div>
-		  </div>
-		</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-
-<footer class="site-footer" style="background-color:#3b5998;color: #fff!Important; position: fixed; width:100%; bottom:0;">
-  <div class="container" style="text-align: center;">
-      <p>Copyright © 2016 | All rights reserved | Design by <a href="http://www.hkwebdevelopers.weebly.com">
-     Kesavapuram Brothers</a></p>
-  </div>
-</footer>
-
+						<div class="ad-pd col-md-3">
+							<img src="{{asset('images/kannan.jpg')}}" class="img-circle">
+						</div>
+						<div class="col-md-9 text-justify" style="color: #4700b3;">
+							<h1> ശ്രീകൃഷ്ണധ്യാനം</h1>
+							<h4>
+								കസ്തൂരി തിലകം ലലാട ഫലകേ
+				                <br>
+				                വക്ഷസ്ഥലേ കൗസ്തുഭം
+				                <br>
+				                നാസാഗ്രേ നവ  മൗക്തികം കരതലേ
+				                <br>
+				                വേണും കരേ കങ്കണം
+				                <br>
+				                സർവ്വാംഗേ ഹരിചന്ദനം ചകലയൻ
+				                <br>
+				                കണ്ധെ ച മുക്താ വലീം
+				                <br>
+				                ഗോപസ്ത്രീ പരിവേഷ്ട്ടിതോ വിജയതേ
+				                <br>
+				                ഗോപലച്ചുധാമണി
+				                <br>
+				                <br>
+				                സാരം :	നെറ്റിയിൽ കസ്തൂരിതിലകം.
+				                <br>
+				                മാറിൽ കൗസ്തുഭമണി, മൂക്കിൽ പവിഴം
+				                <br>
+				                പതിച്ച നാസാമണി, കരതളിരുകളിൽ
+				                <br>
+				                വേണു, കൈത്തണ്ടയിൽ  കങ്കണം
+				                <br>
+				                ദേഹമാസകലം ചന്ദനം, കഴുത്തിൽ
+				                <br>
+				                മുത്തുമാല, അങ്ങനെ ഗോപാലന്മാർക്കു
+				                <br>
+				                ശിരോലങ്കാരമായ കൃഷ്ണൻ
+				                <br>
+				                ഗോപാംഗനകളാൽ ചുറ്റപ്പെട്ട്  വിജയിച്ചരുളുന്നു.
+				                <br>
+				            </h4>
+						</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+		<footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
+		    <div class="container" style="text-align: center;">
+		        <p>
+			        Copyright © 2016 | All rights reserved | Design by <a href="http://www.hkwebdevelopers.weebly.com">
+			        Kesavapuram Brothers</a>
+		        </p>
+		    </div>
+		</footer>
 	</body>
 </html>	
