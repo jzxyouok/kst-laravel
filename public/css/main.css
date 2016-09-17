@@ -43,7 +43,7 @@ body {
 	border-radius: 4px;
 }
 .ad-pd {
-	padding: 5px;
+	padding: 5px!Important;
 }
 ul.templatemo-submenu li:hover {
 	background: #aaa;
@@ -98,4 +98,7 @@ html {
 	border-right: 0;
 	border-radius: 4px;
 	padding: 0!Important;
+}
+.ad-mg-tp {
+	margin-top: 15px;
 }
