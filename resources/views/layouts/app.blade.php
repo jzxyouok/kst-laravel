@@ -81,10 +81,14 @@
             </div>
         </div>
     </nav>
+    <audio hidden id="audio">
+        <source src="{{asset('sounds/click.mp3')}}">
+    </audio>
 
     @yield('content')
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 </body>
 </html>
