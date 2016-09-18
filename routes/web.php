@@ -20,5 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/contact_us', function() {
-	return view('layouts/contactus');
+	return view('contactus/contactus');
 });

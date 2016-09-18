@@ -120,6 +120,13 @@
 		        @else
 		        	<div class="ad-bd col-md-12 ad-pd text-center ad-mg-tp">
 		        		<span class="h3">You are logged in as :<b>{{Auth::user()->name}}</b></span><br>
+		        		<a href="{{ url('/logout') }}"
+                                        onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                        </a>
+                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
 		        	</div>
 		        @endif
 	        </div>
@@ -132,5 +139,10 @@
 		        </p>
 		    </div>
 		</footer>
+		<audio hidden id="audio">
+	        <source src="{{asset('sounds/click.mp3')}}">
+	    </audio>
+	    <script src="/js/app.js"></script>
+	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 	</body>
 </html>	

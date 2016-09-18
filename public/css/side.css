@@ -10,11 +10,11 @@
 }
 .headding {
 	border-bottom: 1px solid #ccc;
-	box-shadow: 0 0 20px 1px #ccc;
+	box-shadow: 0 0 20px 1px #fff;
 }
 .iframe {
-	border: 3px solid #ccc;
-	box-shadow: 0 0 20px 1px #ccc;
+	border: 3px solid #fff;
+	box-shadow: 0 0 20px 1px #fff;
 	margin-bottom: 50px;
 }
 .ad-form {
@@ -26,4 +26,11 @@ textarea {
 	max-width: 100%;
 	min-height: 200px;
 	max-height: 300px;
+}
+.body {
+	background: url('../images/back.png');
+}
+.back-w {
+	background: #f5f8fa;
+	padding: 15px;
 }
