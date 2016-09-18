@@ -35,11 +35,10 @@
 					<ul class="nav navbar-nav">
 						<li><a href="{{url('/')}}"><b>Home</b></a></li>
 				        <li><a href="{{url('/contact_us')}}">Contact us</a></li>
-				        <li><a href="#">Upadevas</a></li>
-				        <li><a href="#">Organisational setup</a></li>
-				        <li><a href="#">Activities</a></li>
-				        <li><a href="#">Festivals</a></li>
-				        <li><a href="#">Facilities</a></li>
+				        <li><a href="{{url('/upadevas')}}">Upadevas</a></li>
+				        <li><a href="{{url('/activities')}}">Activities</a></li>
+				        <li><a href="{{url('/festivals')}}">Festivals</a></li>
+				        <li><a href="{{url('/facilities')}}">Facilities</a></li>
 					</ul>	
 			    </div>
 			</nav>
@@ -59,7 +58,7 @@
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
 			                <li><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
-			                <li><a href="#">
+			                <li><a href="{{url('/online_vazhipad')}}">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
 			                <li><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
@@ -112,23 +111,7 @@
 						</div>
 	        		</div>
 	        	</div>
-		        @if (Auth::guest())
-		        	<div class="ad-bd col-md-12 ad-pd text-center ad-mg-tp">
-		        		<a class="h3" href="{{url('/login')}}">Log in</a><br>
-		        		<a class="h3" href="{{url('/register')}}">Register</a>
-		        	</div>
-		        @else
-		        	<div class="ad-bd col-md-12 ad-pd text-center ad-mg-tp">
-		        		<span class="h3">You are logged in as :<b>{{Auth::user()->name}}</b></span><br>
-		        		<a href="{{ url('/logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
-                        </a>
-                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-		        	</div>
-		        @endif
+		      
 	        </div>
 	    </div>
 		<footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">

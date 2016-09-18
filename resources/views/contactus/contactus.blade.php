@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</title>
+        <title>Contact Us</title>
         <link rel="icon" href="{{asset('favicon.ico')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
