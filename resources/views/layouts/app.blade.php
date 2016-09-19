@@ -68,7 +68,6 @@
                                                  document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#fff" aria-hidden="true"></i>
 
                                         Logout
-                                    </a>
 
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
@@ -90,5 +89,6 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
     <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+
 </body>
 </html>
