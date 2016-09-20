@@ -22,7 +22,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top"  style="background-color:#3b5998;"">
         <div class="container">
             <div class="navbar-header">
 
@@ -35,7 +35,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" style="color:#fff" href="{{ url('/') }}">
                     KESAVAPURAM SREEKRISHNASWAMY TEMPLE
                 </a>
             </div>
@@ -47,28 +47,27 @@
                 </ul>
 
                 <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" >
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a style="color:#fff" href="{{ url('/login') }}">Login</a></li>
+                        <li><a style="color:#fff" href="{{ url('/register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
+                                {{ Auth::user()->name }} <span style="color:#fff" class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{url('/home')}}"><i class="fa fa-user" aria-hidden="true"></i>
+                                <li><a href="{{url('/home')}}"><i class="fa fa-user" style="color:#fff" aria-hidden="true"></i>
  Profile</a></li>
                                 <div class="divider"></div>
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#fff" aria-hidden="true"></i>
 
                                         Logout
-                                    </a>
 
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
@@ -90,5 +89,6 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
     <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+
 </body>
 </html>

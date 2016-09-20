@@ -22,3 +22,19 @@ Route::get('/home', 'HomeController@index');
 Route::get('/contact_us', function() {
 	return view('contactus/contactus');
 });
+
+Route::get('/upadevas', function() {
+	return view('prathishtas/prathishtas');
+});
+Route::get('/activities', function() {
+	return view('activities/activities');
+});
+Route::get('/festivals', function() {
+	return view('festivals/festivals');
+});
+Route::get('/facilities', function() {
+	return view('facilities/facilities');
+});
+Route::get('/online_vazhipad', function() {
+	return view('online_vazhipad/online_vazhipad');
+});
