@@ -70,6 +70,11 @@ ul.templatemo-submenu li:hover a {
 		border-right: 3px solid #777!Important;
 	}
 }
+@media screen and (max-width: 600px) {
+	.ad-icon {
+		display: none;
+	}
+}
 
 .ad-footer {
 	margin-top: 20px;
@@ -101,4 +106,42 @@ html {
 }
 .ad-mg-tp {
 	margin-top: 15px;
+}
+div.col-md-12.text-center.ad-a-w a {color: white!Important;}
+div.navbar.navbar-inverse.n-m-nav.ad-mg-btm-0 a {
+	text-decoration: none!Important;
+	color: white!Important;
+}
+.box-shadow {
+	box-shadow: 0 0 20px 3px #ddd;
+}
+.ad-icon {
+    position: fixed;
+    left: 0;
+    top:45%;
+}
+.fa-1 {
+    padding-top: 15%!important;
+    text-align: center;
+    font-size: 25px!important;
+    color: white;
+    width: 60px;
+    height: 60px;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0.7;
+    padding-top: 15px!Important;
+}
+.fa-1:hover {
+    width: 100px;
+    opacity: 1;
+}
+.fa-facebook {background: #3b5998;}
+.fa-linkedin {background: #007bb6;}
+.fa-google-plus {background: #dd4b39;}
+.ad-icon li {
+	list-style: none;
+	padding: 0;
 }

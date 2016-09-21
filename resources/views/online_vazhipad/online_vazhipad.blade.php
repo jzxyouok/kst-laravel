@@ -20,15 +20,15 @@
 	    <script>
 	        window.Laravel = <?php echo json_encode([
 	            'csrfToken' => csrf_token(),
-	        ]); ?>
+	        ]);  ?>
 	    </script>
 	    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-      <h1>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</h1>
-    </div>
-  </div>
-</nav>
+          <div class="box-shadow">
+            <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
+              <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
+            </div>
+          </div>
+        </nav>
 
 	  @if (Auth::guest())
 		        	<div class="col-md-12 " style="text-align: center;">
@@ -47,27 +47,27 @@
 		        	<br>
 		        	<br>
 		        @else
-		        	<div class="col-md-12 ">
-		        		<span style="color:#800000" class="">Welcome  :<b>{{Auth::user()->name}}</b></span><br>
+		        	<div class="col-md-12 text-center ad-a-w">
+		        		<span style="color:#fff" class="">Welcome: <b>{{Auth::user()->name}}</b></span><br>
 		        		<a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#800000" aria-hidden="true"></i> Logout
+                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#fff!Important;" aria-hidden="true"></i> Logout
                         </a>
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;"> 
                             {{ csrf_field() }}
                         </form>
 		        	</div>
-		        	<h3  class=" col-md-offset-1 " style="color:#fff; font-size:38px" align="center">
+		        	<h3 style="color:#fff; font-size:38px" align="center">
 		        	<b> Prathishtta
 		        	</b></h3> <br>
-    <div class="col-md-offset-2 ">
-    <div class="list-group">
-  <a href="#" style="color:#fff" class="list-group-item active"><h3>ശ്രീകൃഷ്ണസ്വാമി</h3></a>
-  <a href="#" class="list-group-item"><h3>ഗണപതി </h3></a>
-  <a href="#" class="list-group-item"><h3>ദേവി </h3></a>
-  <a href="#" class="list-group-item"><h3> നാഗർ </h3></a>
-</div>
-        </div>
+			    <div class="col-md-offset-2 col-md-8">
+			    <div class="list-group">
+			  <a href="#" style="color:#fff" class="list-group-item active"><h3>ശ്രീകൃഷ്ണസ്വാമി</h3></a>
+			  <a href="#" class="list-group-item"><h3>ഗണപതി </h3></a>
+			  <a href="#" class="list-group-item"><h3>ദേവി </h3></a>
+			  <a href="#" class="list-group-item"><h3> നാഗർ </h3></a>
+			</div>
+			        </div>
 		        @endif
 		  <footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
 		    <div class="container" style="text-align: center;">
