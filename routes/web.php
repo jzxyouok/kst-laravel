@@ -38,3 +38,6 @@ Route::get('/facilities', function() {
 Route::get('/online_vazhipad', function() {
 	return view('online_vazhipad/online_vazhipad');
 });
+Route::get('/addtocart', function() {
+	return view('cart/ajax/addtocart');
+});

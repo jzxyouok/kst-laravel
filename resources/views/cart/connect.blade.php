@@ -5,10 +5,10 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 /* Database config */
 
-$db_host		= '';
-$db_user		= '';
-$db_pass		= '';
-$db_database	= ''; 
+$db_host		= '127.0.0.1';
+$db_user		= 'root';
+$db_pass		= 'hkk710*';
+$db_database	= 'kst'; 
 
 /* End config */
 
