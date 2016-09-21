@@ -47,37 +47,16 @@
 		        	<br>
 		        	<br>
 		        @else
-<<<<<<< HEAD
-		        	<div class="col-md-12 ">
-		        		<span style="color:#800000" class="">Welcome  :<b>{{Auth::user()->name}}</b></span><br>
-		        		<a href="{{ url('/logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#800000" aria-hidden="true"></i> Logout
-=======
 		        	<div class="col-md-12 text-center ad-a-w">
 		        		<span style="color:#fff" class="">Welcome: <b>{{Auth::user()->name}}</b></span><br>
 		        		<a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#fff!Important;" aria-hidden="true"></i> Logout
->>>>>>> 0f689ab8664cd9d5b05a439ea5f3eeff054c29b6
                         </a>
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;"> 
                             {{ csrf_field() }}
                         </form>
 		        	</div>
-<<<<<<< HEAD
-		        	<h3  class=" col-md-offset-1 " style="color:#fff; font-size:38px" align="center">
-		        	<b> Prathishtta
-		        	</b></h3> <br>
-    <div class="col-md-offset-2 ">
-    <div class="list-group">
-  <a href="#" style="color:#fff" class="list-group-item active"><h3>ശ്രീകൃഷ്ണസ്വാമി</h3></a>
-  <a href="#" class="list-group-item"><h3>ഗണപതി </h3></a>
-  <a href="#" class="list-group-item"><h3>ദേവി </h3></a>
-  <a href="#" class="list-group-item"><h3> നാഗർ </h3></a>
-</div>
-        </div>
-=======
 		        	<h3 style="color:#fff; font-size:38px" align="center">
 		        	<b> Prathishtta
 		        	</b></h3> <br>
@@ -89,7 +68,6 @@
 			  <a href="#" class="list-group-item"><h3> നാഗർ </h3></a>
 			</div>
 			        </div>
->>>>>>> 0f689ab8664cd9d5b05a439ea5f3eeff054c29b6
 		        @endif
 		  <footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
 		    <div class="container" style="text-align: center;">
