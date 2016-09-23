@@ -59,17 +59,6 @@
                             {{ csrf_field() }}
                         </form>
 		        	</div>
-		        	<h3 style="color:#fff; font-size:38px" align="center">
-		        	<b> Prathishtta
-		        	</b></h3> <br>
-			    <div class="col-md-offset-2 col-md-8">
-			    <div class="list-group">
-			  <a href="#" style="color:#fff" class="list-group-item active"><h3>ശ്രീകൃഷ്ണസ്വാമി</h3></a>
-			  <a href="#" class="list-group-item"><h3>ഗണപതി </h3></a>
-			  <a href="#" class="list-group-item"><h3>ദേവി </h3></a>
-			  <a href="#" class="list-group-item"><h3> നാഗർ </h3></a>
-			</div>
-			        </div>
 		        @endif
 		  <footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
 		    <div class="container" style="text-align: center;">

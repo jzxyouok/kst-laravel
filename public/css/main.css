@@ -145,3 +145,9 @@ div.navbar.navbar-inverse.n-m-nav.ad-mg-btm-0 a {
 	list-style: none;
 	padding: 0;
 }
+.ad-nav-1 {
+	text-align: left!Important;
+}
+.ad-nav-2 {
+	padding: 30px;
+}
