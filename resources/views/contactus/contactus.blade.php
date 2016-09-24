@@ -40,7 +40,7 @@
         </form>
         <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15783.379663305952!2d76.98001404760743!3d8.514434365177046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddcb74252996ab11!2sKeshavapuram+Srikrishna+Swamy+Temple!5e0!3m2!1sen!2sin!4v1474152170481" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="ad-icon text-left">
-            <li><a href="#"><i class="fa-1 fa fa-facebook fa-ad"></i></a></li>
+            <li><a href="https://www.facebook.com/KesavapuramSreekrishnaSwamyTemple/"><i class="fa-1 fa fa-facebook fa-ad"></i></a></li>
             <li><a href="#"><i class="fa-1 fa fa-linkedin fa-ad"></i></a></li>
             <li><a href="#"><i class="fa-1 fa fa-google-plus fa-ad"></i></a></li>
         </div>

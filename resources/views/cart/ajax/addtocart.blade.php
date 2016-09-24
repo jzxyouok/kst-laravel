@@ -28,7 +28,7 @@ echo json_encode(array(
 ));
 
 ?>
-<?php
+<!--<?php
 
 define('INCLUDE_CHECK',1);
 require "../connect.php";
@@ -57,4 +57,4 @@ echo json_encode(array(
 </table>'
 ));
 
-?>
+?>-->
