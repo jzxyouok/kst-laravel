@@ -50,4 +50,12 @@
         <script src="/js/app.js"></script>
         <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
     </body>
+    <footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
+            <div class="container" style="text-align: center;">
+                <p>
+                    Copyright © 2016 | All rights reserved | Design by <a href="http://www.hkwebdevelopers.weebly.com">
+                    Kesavapuram Brothers</a>
+                </p>
+            </div>
+        </footer>
 </html>
