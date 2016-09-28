@@ -36,26 +36,24 @@
                 'csrfToken' => csrf_token(),
             ]); ?>
         </script>
+        <h1 style="color:#fff; text-align: center;">FESTIVALS</h1>
         <div class="container">
     <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#f1"><b>JANMASHTAMI MAHOTSAVAM</b></a></li>
-    <li><a data-toggle="tab" href="#f2"><b>PRETHISHTA DHINAM</b></a></li>
-    <li><a data-toggle="tab" href="#f3"><b>BHAGAVADA SAPTHAHAM</b></a></li>
-    <li><a data-toggle="tab" href="#f4"><b>SWARGAVATHIL EKADESHI</b></a></li>
-    <li><a data-toggle="tab" href="#f5"><b>NAVARATHIRI MAHOTSAVAM</b></a></li>
-    <li><a data-toggle="tab" href="#f6"><b>MANDALA CHIRAPPU MAHOTSAVAM</b></a></li>
-    <li><a data-toggle="tab" href="#f7"><b>THRIKARTHIKA MAHOTSAVAM</b></a></li>
-    <li><a data-toggle="tab" href="#f8"><b>VISHU KANNI</b></a></li>
-    <li><a data-toggle="tab" href="#f9"><b>VINAYAKA CHATHURTHI</b></a></li>
-    <li><a data-toggle="tab" href="#f10"><b>THIRUVATHIRA MAHOTSAVAM</b></a></li>
+    <li class="active"><a data-toggle="tab" style="color:red;" href="#f1"><b>JANMASHTAMI MAHOTSAVAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f2"><b>PRETHISHTA DHINAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f3"><b>BHAGAVADA SAPTHAHAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f4"><b>SWARGAVATHIL EKADESHI</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f5"><b>NAVARATHIRI MAHOTSAVAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f6"><b>MANDALA CHIRAPPU MAHOTSAVAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f7"><b>THRIKARTHIKA MAHOTSAVAM</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f8"><b>VISHU KANNI</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f9"><b>VINAYAKA CHATHURTHI</b></a></li>
+    <li><a data-toggle="tab" style="color:red;" href="#f10"><b>THIRUVATHIRA MAHOTSAVAM</b></a></li>
   </ul>
 
     </head>
 
     <body>
-    <h1 style="color:#fff; text-align: center;">FESTIVALS</h1>
-    <ol style="color:#e60000">
-    </ol>
     </div>
     <div class="tab-content">
     <div id="f1" class="tab-pane active">

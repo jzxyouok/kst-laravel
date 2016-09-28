@@ -41,3 +41,12 @@ Route::get('/online_vazhipad', function() {
 Route::get('online_vazhipad/addtocart', function() {
 	return view('cart/ajax/addtocart');
 });
+Route::get('/Offerings', function() {
+	return view('offerings/offerings');
+});
+Route::get('/dailyrituals', function() {
+	return view('dailyrituals/dailyrituals');
+});
+Route::get('/poojadetails', function() {
+	return view('poojadetails/poojadetails');
+});
