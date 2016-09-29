@@ -13,16 +13,16 @@
 }
 .n-m-nav {
 	height: auto;
-	background: #3b5998!Important;
+	background: #e67300!Important;
 	color: #fff!Important;
 	text-align: center;
 }
 body {
-	background: #3b5998;
-    background: -webkit-linear-gradient(#3b5998, #fff); 
-    background: -o-linear-gradient(#3b5998, #fff);
-    background: -moz-linear-gradient(#3b5998, #fff);
-    background: linear-gradient(#3b5998, #fff);
+	background:  #e67300;
+    background: -webkit-linear-gradient(#e67300, #fff); 
+    background: -o-linear-gradient(#e67300, #fff);
+    background: -moz-linear-gradient(#e67300, #fff);
+    background: linear-gradient(#e67300, #fff);
 }
 .ad-mg-btm-0 {
 	margin-bottom: 0!Important;
@@ -33,7 +33,7 @@ body {
 .n-m-b-heading {
 	width: 100%;
 	height: 50px;
-	background: #3b5998;
+	background: #e67300;
 	padding: 10px;
 	color: #fff;
 }
