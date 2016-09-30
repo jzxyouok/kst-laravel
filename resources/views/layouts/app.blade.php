@@ -22,7 +22,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top"  style="background-color:#3b5998;"">
+    <nav class="navbar navbar-default navbar-static-top"  style="background-color:#e67300;"">
         <div class="container">
             <div class="navbar-header">
 
@@ -36,7 +36,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" style="color:#fff" href="{{ url('/') }}">
-                    KESAVAPURAM SREEKRISHNASWAMY TEMPLE
+                <b> KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>
                 </a>
             </div>
 

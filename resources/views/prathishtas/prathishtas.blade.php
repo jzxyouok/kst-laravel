@@ -32,4 +32,6 @@
 <img src="{{asset('images/nagar.jpg')}}" alt="" class="img-circle">
 <img src="{{asset('images/nagar.jpg')}}" class="img-thumbnail" alt="">
 </body>
+@include('layouts.footer')
+@include('layouts.audio')
 </html>

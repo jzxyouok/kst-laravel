@@ -1,10 +1,10 @@
 @extends('layouts.app')
-
-@section('content')
+ <div style ="background-image:url('images/login4.jpg'); height: 700px;>
+ @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+        <div class="col-md-7 col-md-offset-2">
+            <div class="panel panel-default" style="background-color:#e67300; color:#fff">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
@@ -54,7 +54,7 @@
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                <a class="btn btn-link"  style="color:#fff" href="{{ url('/password/reset') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>
@@ -65,4 +65,7 @@
         </div>
     </div>
 </div>
+</div>
+@include('layouts.footer')
+@include('layouts.audio')
 @endsection

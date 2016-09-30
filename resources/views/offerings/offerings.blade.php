@@ -26,7 +26,7 @@
 	<body>
 		<div id="nav-main">
 			<div id="n-m-img ad-mg-btm-0">
-				<img src="{{asset('images/hkk.jpg')}}" width="100%" height="400">
+				<img src="{{asset('images/hkkk.JPG')}}" width="100%" height="400">
 			</div>
 		</div>
 		<div class="nav-width">
@@ -103,17 +103,8 @@ PH -0471 2362600<br></b>
 		      
 	        </div>
 	    </div>
-		<footer class="site-footer ad-footer" style="background-color:#3b5998; width:100%; bottom:0; position: fixed; box-shadow: 0 0 25px 1px #fff; z-index: 100;">
-		    <div class="container" style="text-align: center;">
-		        <p>
-			        Copyright © 2016 | All rights reserved | Design by <a href="http://www.hkwebdevelopers.weebly.com">
-			        Kesavapuram Brothers</a>
-		        </p>
-		    </div>
-		</footer>
-		<audio hidden id="audio">
-	        <source src="{{asset('sounds/click.mp3')}}">
-	    </audio>
+		@include('layouts.footer')
+		@include('layouts.audio')
 	    <script src="/js/app.js"></script>
 	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 	</body>
