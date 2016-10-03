@@ -123,5 +123,8 @@
 		
 	    <script src="/js/app.js"></script>
 	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+
+	     <a href="{{url('/index')}}">
+			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a>
 	</body>
 </html>	
