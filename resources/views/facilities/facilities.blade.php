@@ -16,7 +16,6 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Contact Us</title>
         <link rel="icon" href="{{asset('favicon.ico')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
@@ -37,4 +36,6 @@
  </body>
  	@include('layouts.footer')
  	@include('layouts.audio')
+    <script src="/js/app.js"></script>
+        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
  </html>

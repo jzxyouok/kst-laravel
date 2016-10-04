@@ -59,6 +59,21 @@ ul.templatemo-submenu li:hover a {
 	margin-left: 10%;
 	height: auto;
 }
+.img-flex {
+		width: 500px;
+		height: 400px;
+	}
+
+
+
+
+
+@media screen and (min-width: 992px) {
+	.img-flex {
+		width: 500px;
+		height: 400px;
+	}
+}
 @media screen and (max-width: 991px) {
 	.at-media-1 {
 		margin-top: 10px;
@@ -75,6 +90,16 @@ ul.templatemo-submenu li:hover a {
 		display: none;
 	}
 }
+
+
+
+
+
+
+
+
+
+
 
 html {
 	margin-bottom: 50px!Important
@@ -140,4 +165,17 @@ div.navbar.navbar-inverse.n-m-nav.ad-mg-btm-0 a {
 }
 .ad-nav-2 {
 	padding: 30px;
+}
+body {
+	min-height: 100vh;
+}
+.img-index {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+.img-index:hover {
+	cursor: pointer;
+	box-shadow: 0 0 20px 3px #ccc;
 }

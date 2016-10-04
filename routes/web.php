@@ -19,34 +19,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/contact_us', function() {
-	return view('contactus/contactus');
-});
+Route::get('/contact_us', 'contactusController@index');
 
-Route::get('/upadevas', function() {
-	return view('prathishtas/prathishtas');
-});
-Route::get('/activities', function() {
-	return view('activities/activities');
-});
-Route::get('/festivals', function() {
-	return view('festivals/festivals');
-});
-Route::get('/facilities', function() {
-	return view('facilities/facilities');
-});
-Route::get('/online_vazhipad', function() {
-	return view('online_vazhipad/online_vazhipad');
-});
-Route::get('/Offerings', function() {
-	return view('offerings/offerings');
-});
-Route::get('/dailyrituals', function() {
-	return view('dailyrituals/dailyrituals');
-});
-Route::get('/poojadetails', function() {
-	return view('poojadetails/poojadetails');
-});
-Route::get('/index', function() {
-	return view('drop/index');
-});
+Route::get('/upadevas', 'upadevasController@index');
+
+Route::get('/activities', 'activitiesController@index');
+
+Route::get('/festivals', 'festivalsController@index');
+
+Route::get('/facilities', 'facilitiesController@index');
+
+Route::get('/online_vazhipad', 'onlinevazhipadController@index');
+
+Route::get('/index', 'index_dropController@index');

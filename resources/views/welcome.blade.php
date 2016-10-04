@@ -53,16 +53,19 @@
 					<div class="ad-pd n-m-b-body">
 						<ul class="templatemo-submenu">
 
-			                <li><a href="{{url('/dailyrituals')}}">
+			                <li id="change1-c"><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
-			                <li><a href="{{url('/Offerings')}}">
+			                <li id="change2-c"><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
-			                <li><a href="{{url('/poojadetals')}}">
+			                <li id="change3-c"><a href="#">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
-			                <li><a href="#">
+			                <li id="change4-c"><a href="#">
 			                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>			                    
 			                <li><a href="{{url('/online_vazhipad')}}">
 			                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
+			                <li>
+			                	<a href="{{url('/index')}}"><i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals????????????? </a>
+			                </li>
 						</ul>
 					</div>
 				</div>
@@ -72,8 +75,9 @@
 						<div class="ad-pd col-md-3">
 							<img src="{{asset('images/kannan.jpg')}}" class="img-circle">
 						</div>
-						<div class="col-md-9 text-justify" style="color: #4700b3;">
-							<h1> ശ്രീകൃഷ്ണധ്യാനം</h1>
+						<div class="col-md-9" style="color: #4700b3;">
+							<div id="change1">
+							<h1 class="text-center"> ശ്രീകൃഷ്ണധ്യാനം</h1>
 							<h4>
 								കസ്തൂരി തിലകം ലലാട ഫലകേ
 				                <br>
@@ -112,6 +116,104 @@
 				                <br>
 				                <br>
 				            </h4>
+				            </div>
+				            <div id="change2" style="display: none;">
+				            <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
+					<h4><b>
+				            	<p> <span style="color:#a5011f;"> MORNING</span></p> 						
+5.00 : 
+PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
+5.10 : 
+NIRMALYADARSANAM<br>
+5.35 : 
+ABHISHEKAM (ABLUTIONS OF THE IDOL IN OIL, MILK ETC.)<br>
+5.45 : 
+GANAPATHY HOMAM (SPECIFIC OFFERING TO GOD VINAYAKA)<br>
+6.00 : 
+DEEPARADHANA (BURNING INCENSE AND LIGHTING LAMPS TO THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;HONOUR AND GLORY OF THE ALMIGHTY)<br>
+6.30 : 
+USHA POOJA (MORNING RITE)<br>
+6.40 : 
+DEEPARADHANA<br>
+8.30 : 
+NIVEDHYAM<br>
+9.00 : 
+PRASANNA POOJA<br>
+10.00 :  
+NIVEDHYAM<br>
+11.00 : 
+UCHA POOJA<br>
+11.30 : 
+NADA ADAKUNNU<br>
+<br>
+<br>
+<p> <span style="color:#a5011f;">EVENING</span></p> 
+ 5.00 : NADA THURAPPU (OPENING OF SREEKOVIL)<br>
+6.45 : 
+DEEPARADHANA<br>
+7.30 : 
+ATHAZHA POOJA (NIGHT RITE)<br>
+8.00 : 
+DEEPARADHANA (NIGHT RITE)<br>
+8.05 : 
+NADA ADAKUNNU<br>
+<br>
+<div class="alert alert-info" role="alert">
+POOJA TIMINGS MAY BE ALTERED ON SPECIAL OCCASIONS<br>
+
+Besides these "Kunjoonu" (Choroonu - first rice feeding ceremony for children) <br>Thulabharam, Vidyarambham, Archana etc.<br> can be done at this temple.<br>
+</div>
+<br>
+<br>
+ </b></h4>
+				            </div>
+				            <div id="change3" style="display: none;">
+				            	<h1 class="text-center"><span style="color:#a5011f"><b>Offerings<b></span></h1>
+						<h4><b>
+May the blessings of God SREEKRISHNA SWAMI be bestowed upon you,
+<br> reduce agony and save lives through the limitless showering of His mercy.
+<br>
+Contributions are welcome from individuals and organisations.
+<br>
+<br>
+<div class="alert alert-info" role="alert">	
+Cheques and drafts drawn in favour of <br>
+"Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST " 
+<br> sent to the following address.
+<br>
+<br>
+Secretary<br>
+KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST<br>
+MARUTHAMKUZHY<br>
+THIRUVANANTHAPURAM<br>
+PIN CODE -695 030<br>
+PH -0471 2362600<br></b>
+</div>
+
+
+				              
+				            </h4>
+				            </div>
+				            <div id="change4" style="display:none;">
+				            	<h1 class="text-center"><span style="color:#a5011f"><b>Pooja Details</b></span></h1>
+				            </div>
+				            <div id="change5" style="display: none;">
+				            	<h1 class="text-center"><span style="color:#a5011f"><b>Gallery</b></span></h1>
+				            	<div class="col-md-12">
+				            		<div class="col-md-6">
+				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            		</div>
+				            		<div class="col-md-6">
+				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            		</div>
+				            		<div class="col-md-6">
+				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            		</div>
+				            		<div class="col-md-6">
+				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            		</div>
+				            	</div>
+				            </div>
 						</div>
 	        		</div>
 	        	</div>
@@ -124,7 +226,6 @@
 	    <script src="/js/app.js"></script>
 	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 
-	     <a href="{{url('/index')}}">
-			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a>
+	     
 	</body>
 </html>	
