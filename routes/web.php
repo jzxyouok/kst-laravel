@@ -47,3 +47,6 @@ Route::get('/dailyrituals', function() {
 Route::get('/poojadetails', function() {
 	return view('poojadetails/poojadetails');
 });
+Route::get('/index', function() {
+	return view('drop/index');
+});

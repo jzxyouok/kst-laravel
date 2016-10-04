@@ -53,12 +53,13 @@
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" style="color:#fff!Important;" aria-hidden="true"></i> Logout
                         </a>
-                        <h3><a href="{{url('/addtocart')}}">book</a></h3>
+                        <h3><a href="{{url('/index')}}">book</a></h3>
 		        		<br>
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;"> 
                             {{ csrf_field() }}
                         </form>
 		        	</div>
+
 		        @endif
 		@include('layouts.footer')
 		@include('layouts.audio')
