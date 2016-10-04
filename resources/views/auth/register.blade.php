@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<div style="background-image:url('images/login4.jpg');min-height: 90vh; background-size: cover;">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+            <div class="panel panel-default" style="background-color:#e67300;color:#fff;">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
@@ -78,6 +79,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @include('layouts.footer')
 @include('layouts.audio')
