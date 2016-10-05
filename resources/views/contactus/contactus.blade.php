@@ -74,12 +74,12 @@ function test_input($data) {
             </div>
           </div>
         </nav>
-        <form class="ad-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
-            <input class="form-control"  placeholder="Name...*" type="text" name="name" value="<?php echo $name;?>">
-            <span class="error">* <?php echo $nameErr;?></span><br>
-            <input class="form-control" placeholder="Email...*" type="email" name="email" value="<?php echo $email;?>">
-            <span class="error">* <?php echo $emailErr;?></span><br>
-            <textarea class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40"><?php echo $comment;?></textarea><br>
+        <form class="ad-form" method="post" action="{{htmlspecialchars($_SERVER["PHP_SELF"])}}"> 
+            <input class="form-control"  placeholder="Name...*" type="text" name="name" value="{{$name}}">
+            <span class="error">* {{$nameErr}}</span><br>
+            <input class="form-control" placeholder="Email...*" type="email" name="email" value="{{$email}}">
+            <span class="error">* {{$emailErr}}</span><br>
+            <textarea class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40">{{$comment}}</textarea><br>
             <input type="submit" class="btn btn-success" name="submit" value="Send">
         </form>
 

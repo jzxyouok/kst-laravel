@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
-	<head>
+<head>
 	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,23 +24,37 @@
             ]); ?>
         </script>
 	</head>
-	<body>
+<body>
 	<nav class="navbar navbar-default">
-          <div class="box-shadow">
+        <div class="box-shadow">
             <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-              <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
+                <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
             </div>
-          </div>
-        </nav><br><br><br><br><br>
-        <h1 class="text-center" style="color: 090909;">
-        	<b>Error. Page was not found..........</b>
-        </h1>
-        <h2 class="text-center" style="color: 090909;">
-            404 Error
-        </h2>
-        @include('layouts.footer')
+        </div>
+    </nav>
+
+
+    <div class="ad-pd col-md-3">
+    	<img src="{{asset('images/dummyimage.png')}}" style="width: 100%;" class="img-index">
+    </div>
+    <div class="ad-pd col-md-3">
+    	<img src="{{asset('images/dummyimage.png')}}" style="width: 100%;" class="img-index">
+    </div>
+    <div class="ad-pd col-md-3">
+    	<img src="{{asset('images/dummyimage.png')}}" style="width: 100%;" class="img-index">
+    </div>
+    <div class="ad-pd col-md-3">
+    	<img src="{{asset('images/dummyimage.png')}}" style="width: 100%;" class="img-index">
+    </div>
+    <div class="ad-pd col-md-3">
+    	<img src="{{asset('images/dummyimage.png')}}" style="width: 100%;" class="img-index">
+    </div>
+
+
+
+	@include('layouts.footer')
     @include('layouts.audio')
     <script src="/js/app.js"></script>
-        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
-	</body>
+    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+</body>
 </html>
