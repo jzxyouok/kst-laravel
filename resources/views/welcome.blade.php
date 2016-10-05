@@ -70,6 +70,14 @@
 	            'csrfToken' => csrf_token(),
 	        ]); ?>
 	    </script>
+
+
+
+        <script>
+        $(function() {
+          $(".rslides").responsiveSlides();
+        });
+        </script>
 	</head>
 	<body>
 		<div id="nav-main">
@@ -124,9 +132,11 @@
 			                    <div>
 									<div class="n-m-b-heading"><b>News Update</b></div>
 									<div class="ad-pd ">
-										<ul class="templatemo-submenu" style="background-color:#990000;">
+									<ul class="templatemo-submenu" style="background-color:#990000;">
 										<div class="scroll-up">
-											<p><a href="#" style="color:#990000;">Navarathri</a></p>
+
+
+										<p><a href="#" style="color:#990000;">Navarathri</a></p>
 											<br>
 											<p><a href="#" style="color:#990000;">Pallikettu</a></p>
 											<br>
@@ -138,8 +148,15 @@
 											<br>
 											<p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
 											<br>
-											<br>
-											</div>
+											<br> 
+								  @foreach($newsfeed as $news)
+                 			 <div> <b> {{$news->message}}</b></div>
+          					</div>
+          					@endforeach	
+
+							<div>					
+										</div>
+
 										</ul>
 									</div>	
 								</div>

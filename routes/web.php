@@ -9,15 +9,46 @@
 | by your application. Just tell Laravel the URIs it should respond
 | to using a Closure or controller method. Build something great!
 |
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+
+Route::resource('/','WelcomeController',
+                  ['names'=>[
+                              'index'=>'welcome.index',
+                              'create'=>'welcome.create',
+                              'store'=>'welcome.store',
+                              'destroy'=>'welcome.destroy'
+                            ]
+
+                  ]);
+
+					 Route::resource('welcome','WelcomeController',
+                                    ['names'=>[
+                                                'index'=>'welcome.index',
+                                                'create'=>'welcome.create',
+                                                'store'=>'welcome.store',
+                                                'destroy'=>'welcome.destroy'
+                                              ]
+
+                                    ]);
+
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::get('/home/clearlogs', 'HomeController@destroy');
+Route::get('downloadExcel/{database}/{type}', 'ImportExportController@downloadExcel');
+Route::post('importExcel/{database}', 'ImportExportController@importExcel');
+
+ //if error remove this line//
+
 
 Route::get('/contact_us', 'contactusController@index');
 
@@ -40,3 +71,4 @@ Route::get('/gallery2', 'galleryController@gallery2');
 Route::get('/gallery3', 'galleryController@gallery3');
 
 Route::get('/gallery4', 'galleryController@gallery4');
+
