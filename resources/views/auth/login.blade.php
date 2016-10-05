@@ -1,6 +1,7 @@
 @extends('layouts.app')
- <div style ="background-image:url('images/login4.jpg'); min-height: 90vh; background-size: cover;>
+ <div style ="background-image:url('images/login4.jpg'); min-height: 90vh; background-size: cover;">
  @section('content')
+
 <div class="container">
     <div class="row">
         <div class="col-md-7 col-md-offset-2">
