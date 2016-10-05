@@ -32,3 +32,11 @@ Route::get('/facilities', 'facilitiesController@index');
 Route::get('/online_vazhipad', 'onlinevazhipadController@index');
 
 Route::get('/index', 'index_dropController@index');
+
+Route::get('/gallery1', 'galleryController@gallery1');
+
+Route::get('/gallery2', 'galleryController@gallery2');
+
+Route::get('/gallery3', 'galleryController@gallery3');
+
+Route::get('/gallery4', 'galleryController@gallery4');

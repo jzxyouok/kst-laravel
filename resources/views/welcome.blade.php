@@ -45,32 +45,51 @@
 			<marquee style="color: #990000; font-size:22px;">
 				<b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>
 			</marquee>
-			<div id="n-m-body" style="margin-top: 15px;">
-				<div class="col-md-3 ad-bd-1">
-					<div class="n-m-b-heading">
-						<b>Dashboard</b>
-					</div>
-					<div class="ad-pd n-m-b-body">
-						<ul class="templatemo-submenu">
+		
+			<div class="container">
+			    <div class="row">
+			        <div class="col-lg-3 col-xs-12">
+			            <div class="row">
+			                <div class="col-xs-12 ad-bd-1">
+			                    <div class="n-m-b-heading">
+									<b>Dashboard</b>
+								</div>
+								<div class="ad-pd n-m-b-body">
+									<ul class="templatemo-submenu">
 
-			                <li id="change1-c"><a href="#">
-			                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
-			                <li id="change2-c"><a href="#">
-			                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
-			                <li id="change3-c"><a href="#">
-			                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
-			                <li id="change4-c"><a href="#">
-			                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>			                    
-			                <li><a href="{{url('/online_vazhipad')}}">
-			                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
-			                <li>
-			                	<a href="{{url('/index')}}"><i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals????????????? </a>
-			                </li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-9 ad-bd at-media-1">
-					<div class="n-m-b-heading"></div>
+						                <li id="change1-c"><a href="#">
+						                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
+						                <li id="change2-c"><a href="#">
+						                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
+						                <li id="change3-c"><a href="#">
+						                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
+						                <li id="change4-c"><a href="#">
+						                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>			                    
+						                <li><a href="{{url('/online_vazhipad')}}">
+						                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
+						                <li>
+						                	<a href="{{url('/index')}}"><i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals????????????? </a>
+						                </li>
+									</ul>
+								</div>
+				            </div>
+			            </div>
+			            <div class="row">
+			                <div class="col-xs-12 ad-bd-1 at-media-1">
+			                    <div>
+									<div class="n-m-b-heading"><b>News Update</b></div>
+									<div class="ad-pd n-m-b-body">
+										<ul class="templatemo-submenu">
+											<li><a href="#">Hi!</a></li>
+										</ul>
+									</div>	
+								</div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-lg-7 col-xs-12 ad-bd at-media-1">
+			            <div>
+			            	<div class="n-m-b-heading"></div>
 					<div class="ad-pd">
 						<div class="ad-pd col-md-3">
 							<img src="{{asset('images/kannan.jpg')}}" class="img-circle">
@@ -201,25 +220,30 @@ PH -0471 2362600<br></b>
 				            	<h1 class="text-center"><span style="color:#a5011f"><b>Gallery</b></span></h1>
 				            	<div class="col-md-12">
 				            		<div class="col-md-6">
-				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            			<a href="{{url('/gallery1')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
 				            		</div>
 				            		<div class="col-md-6">
-				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            			<a href="{{url('/gallery2')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
 				            		</div>
 				            		<div class="col-md-6">
-				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            			<a href="{{url('/gallery3')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
 				            		</div>
 				            		<div class="col-md-6">
-				            			<img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;">
+				            			<a href="{{url('/gallery4')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
 				            		</div>
 				            	</div>
 				            </div>
 						</div>
 	        		</div>
+
 	        	</div>
 		      
 	        </div>
-	    </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
 		@include('layouts.footer')
 		@include('layouts.audio')
 		
