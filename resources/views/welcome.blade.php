@@ -1,3 +1,51 @@
+<style style="text/css">
+.scroll-up {
+ height: 220px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: #990000;
+ border:NULL;
+}
+.scroll-up p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left; 
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-up 15s linear infinite;
+ -webkit-animation: scroll-up 5s linear infinite;
+ animation: scroll-up 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+</style>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -64,12 +112,9 @@
 						                <li id="change3-c"><a href="#">
 						                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
 						                <li id="change4-c"><a href="#">
-						                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>			                    
+						                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>	              
 						                <li><a href="{{url('/online_vazhipad')}}">
 						                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
-						                <li>
-						                	<a href="{{url('/index')}}"><i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals????????????? </a>
-						                </li>
 									</ul>
 								</div>
 				            </div>
@@ -78,9 +123,23 @@
 			                <div class="col-xs-12 ad-bd-1 at-media-1">
 			                    <div>
 									<div class="n-m-b-heading"><b>News Update</b></div>
-									<div class="ad-pd n-m-b-body">
-										<ul class="templatemo-submenu">
-											<li><a href="#">Hi!</a></li>
+									<div class="ad-pd ">
+										<ul class="templatemo-submenu" style="background-color:#990000;">
+										<div class="scroll-up">
+											<p><a href="#" style="color:#990000;">Navarathri</a></p>
+											<br>
+											<p><a href="#" style="color:#990000;">Pallikettu</a></p>
+											<br>
+											<p><a href="#" style="color:#990000;">Sapthaham</a></p>
+											<br>
+											<p><a href="#" style="color:#990000;">Vishukanai</a></p>
+											<br>
+											<p><a href="#" style="color:#990000;">Vishukanai</a></p>
+											<br>
+											<p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
+											<br>
+											<br>
+											</div>
 										</ul>
 									</div>	
 								</div>
