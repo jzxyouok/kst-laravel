@@ -64,7 +64,7 @@ Route::get('/online_vazhipad', 'onlinevazhipadController@index');
 
 Route::get('/index', 'index_dropController@index');
 
-Route::get('/gallery1', 'galleryController@gallery1');
+Route::get('/gallery1', 'galleryController@Gallery1');
 
 Route::get('/gallery2', 'galleryController@gallery2');
 
