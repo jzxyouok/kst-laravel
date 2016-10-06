@@ -114,15 +114,15 @@
 									<ul class="templatemo-submenu">
 
 						                <li id="change1-c"><a href="#">
-						                    <i class='fa fa-eye' style='color:#F14700'></i> Daily Rituals </a></li>
+						                    <i class= "fa fa-sun-o" style='color:#F14700'></i> &nbsp; Daily Rituals </a></li>
 						                <li id="change2-c"><a href="#">
-						                    <i class='fa fa-eye' style='color:#F14700'></i> Offerings </a></li>
+						                    <i class= "fa fa-paper-plane"  style='color:#F14700'></i>&nbsp; &nbsp;Offerings </a></li>
 						                <li id="change3-c"><a href="#">
-						                    <i class='fa fa-eye' style='color:#F14700'></i> Pooja Details </a></li>
+						                    <i class= "fa fa-fire" style='color:#F14700'></i>&nbsp; &nbsp; Pooja Details </a></li>
 						                <li id="change4-c"><a href="#">
-						                  <i class='fa fa-eye' style='color:#F14700'></i> Gallery </a></li>	              
+						                  <i class= "fa fa-picture-o" style='color:#F14700'></i>&nbsp; &nbsp;Gallery </a></li>	        
 						                <li><a href="{{url('/online_vazhipad')}}">
-						                    <i class='fa fa-eye' style='color:#F14700'></i> Online Vazhipad </a></li>
+						                    <i class= "fa fa-credit-card-alt" style='color:#F14700'></i>&nbsp; Online Vazhipad </a></li>
 									</ul>
 								</div>
 				            </div>
