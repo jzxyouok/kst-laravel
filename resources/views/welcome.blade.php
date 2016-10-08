@@ -128,7 +128,7 @@
 				            </div>
 			            </div>
 			            <div class="row">
-			                <div class="col-xs-12 ad-bd-1 at-media-1">
+			                <div class="col-xs-12 ad-bd-1 at-media-1 ad-mg-tp-1">
 			                    <div>
 									<div class="n-m-b-heading"><b>News Update</b></div>
 									<div class="ad-pd ">

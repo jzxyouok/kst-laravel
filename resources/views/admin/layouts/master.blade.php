@@ -20,9 +20,9 @@
                             <p>{{ Session::get('message') }}</p>
                         </div>
                     @endif
+                    
 
                     @yield('content')
-
                 </div>
             </div>
 

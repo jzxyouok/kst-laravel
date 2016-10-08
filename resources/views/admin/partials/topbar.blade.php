@@ -2,8 +2,8 @@
     <div class="page-header-inner">
         <div class="page-header-inner">
             <div class="navbar-header">
-                <a href="{{ url(config('quickadmin.homeRoute')) }}" class="navbar-brand">
-                    {{ trans('quickadmin::admin.partials-topbar-title') }}
+                <a href="{{ url('/') }}" class="navbar-brand">
+                    KESAVAPURAM SREEKRISHNASWAMY TEMPLE
                 </a>
             </div>
             <a href="javascript:;"
