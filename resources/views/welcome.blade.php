@@ -149,13 +149,6 @@
 											<p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
 											<br>
 											<br> 
-								  @foreach($newsfeed as $news)
-                 			 <div> <b> {{$news->message}}</b></div>
-          					</div>
-          					@endforeach	
-
-							<div>					
-										</div>
 
 										</ul>
 									</div>	
