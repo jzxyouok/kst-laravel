@@ -11,7 +11,4 @@ class contactusController extends Controller
     public function index() {
     	return view('contactus/contactus');
     }
-    public function send() {
-    	return view('contactus.send');
-    }
 }

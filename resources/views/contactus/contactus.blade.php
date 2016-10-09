@@ -47,7 +47,7 @@
           <div class="panel panel-default" style="background: #e67300; color: #fff; border: 0; box-shadow: 0 0 30px 3px #eee;">
           <div class="panel panel-heading">FeedBack</div>
             <div class="panel panel-body"  style="background: #e67300; color: #fff;">
-              <form class="ad-form col-md-12" method="post" action="/contact_us/send"> 
+              <form class="ad-form col-md-12" method="post" action="#"> 
                   <input class="form-control"  placeholder="Name...*" type="text" name="name">
                   <br>
                   <input class="form-control" placeholder="Email...*" type="email" name="email">
