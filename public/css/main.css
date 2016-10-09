@@ -194,3 +194,20 @@ body {
 	padding: 15px;
 	width: 50%;
 }
+.ad-bd-bd {
+	border-radius: 4px!Important;
+}
+.ad-bd-40 {
+	border-radius: 40px!Important;
+}
+.a-b {
+	color: #333;
+}
+.a-b:hover, .a-b:focus {
+	
+	text-decoration: none;
+	color: #333;
+}
+.a-b:hover b {
+	text-shadow: 2px 2px 2px #000;
+}

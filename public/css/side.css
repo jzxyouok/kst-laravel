@@ -28,7 +28,9 @@ textarea {
 	max-height: 300px;
 }
 .body {
-	background: url('../images/back.png');
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .back-w {
 	background: #f5f8fa;

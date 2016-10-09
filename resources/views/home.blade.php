@@ -1,6 +1,6 @@
 <style style="text/css">
 .scroll-up {
- height: 220px;	
+ height: 220px; 
  overflow: hidden;
  position: relative;
  background: yellow;
@@ -16,9 +16,9 @@
  text-align: left; 
  /* Starting position */
  -moz-transform:translateY(100%);
- -webkit-transform:translateY(100%);	
+ -webkit-transform:translateY(100%);    
  transform:translateY(100%);
- /* Apply animation to this element */	
+ /* Apply animation to this element */  
  -moz-animation: scroll-up 15s linear infinite;
  -webkit-animation: scroll-up 5s linear infinite;
  animation: scroll-up 15s linear infinite;
@@ -36,7 +36,7 @@
  0%   { 
  -moz-transform: translateY(100%); /* Browser bug fix */
  -webkit-transform: translateY(100%); /* Browser bug fix */
- transform: translateY(100%); 		
+ transform: translateY(100%);       
  }
  100% { 
  -moz-transform: translateY(-100%); /* Browser bug fix */
@@ -44,35 +44,32 @@
  transform: translateY(-100%); 
  }
 }
-.col-md-* {
-	max-width: 100%;
-}
 </style>
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <!-- CSRF Token -->
-	    <meta name="csrf-token" content="{{ csrf_token() }}">
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-	    <title>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</title>
-	    <link rel="icon" href="{{asset('favicon.ico')}}">
-	    <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
-	    <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+        <title>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</title>
+        <link rel="icon" href="{{asset('favicon.ico')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
 
-	    <!-- Styles -->
-	    <link href="/css/app.css" rel="stylesheet">
+        <!-- Styles -->
+        <link href="/css/app.css" rel="stylesheet">
 
-	    <!-- Scripts -->
-	    <script>
-	        window.Laravel = <?php echo json_encode([
-	            'csrfToken' => csrf_token(),
-	        ]); ?>
-	    </script>
+        <!-- Scripts -->
+        <script>
+            window.Laravel = <?php echo json_encode([
+                'csrfToken' => csrf_token(),
+            ]); ?>
+        </script>
 
 
 
@@ -81,35 +78,36 @@
           $(".rslides").responsiveSlides();
         });
         </script>
-	</head>
-	<body>
-		<div id="nav-main">
-			<div id="n-m-img ad-mg-btm-0">
-				<img src="{{asset('images/hkkk.JPG')}}" width="100%" height="400">
-			</div>
-		</div>
-		<div class="nav-width">
-			<nav class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-				<div class="container-fluid">
-					<ul class="nav navbar-nav">
-						<li><a href="{{url('/')}}"><b>Home</b></a></li>
-				        <li><a href="{{url('/contact_us')}}">Contact us</a></li>
-				        <li><a href="{{url('/upadevas')}}">Upadevas</a></li>
-				        <li><a href="{{url('/activities')}}">Activities</a></li>
-				        <li><a href="{{url('/festivals')}}">Festivals</a></li>
-				        <li><a href="{{url('/facilities')}}">Facilities</a></li>
-					</ul>	
-			    </div>
-			</nav>
-
-			<marquee style="color: #990000; font-size:22px;">
-				<b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>
-			</marquee>
-
-			<div class="col-md-12">
-				<div class="row">
-				    <div class="col-md-3 ad-bd">
-				    		<div class="n-m-b-heading">
+    </head>
+    <body>
+        <div id="nav-main">
+            <div id="n-m-img ad-mg-btm-0">
+                <img src="{{asset('images/hkkk.JPG')}}" width="100%" height="400">
+            </div>
+        </div>
+        <div class="nav-width">
+            <nav class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{url('/')}}"><b>Home</b></a></li>
+                        <li><a href="{{url('/contact_us')}}">Contact us</a></li>
+                        <li><a href="{{url('/upadevas')}}">Upadevas</a></li>
+                        <li><a href="{{url('/activities')}}">Activities</a></li>
+                        <li><a href="{{url('/festivals')}}">Festivals</a></li>
+                        <li><a href="{{url('/facilities')}}">Facilities</a></li>
+                    </ul>   
+                </div>
+            </nav>
+            <marquee style="color: #990000; font-size:22px;">
+                <b>ഹരേ  രാമ     ഹരേ രാമ ....രാമ രാമ     ഹരേ ഹരേ...........ഹരേ       കൃഷ്ണ   ഹരേ കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ ഹരേ ഹരേ...</b>
+            </marquee>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12 ad-bd-1">
+                                <div class="n-m-b-heading">
                                     <b>Dashboard</b>
                                 </div>
                                 <div class="ad-pd n-m-b-body">
@@ -128,9 +126,39 @@
                                     </ul>
                                 </div>
                             </div>
-				    
-				    <div class="col-md-9 ad-bd ad-pd-0">
-				    		<div class="n-m-b-heading"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 ad-bd-1 at-media-1 ad-mg-tp-1">
+                                <div>
+                                    <div class="n-m-b-heading"><b>News Update</b></div>
+                                    <div class="ad-pd ">
+                                    <ul class="templatemo-submenu" style="background-color:#990000;">
+                                        <di v class="scroll-up">
+
+
+                                        <p><a href="#" style="color:#990000;">Navarathri</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Pallikettu</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Sapthaham</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
+                                            <br>
+                                            <br> 
+
+                                        </ul>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-12 ad-bd at-media-1">
+                        <div>
+                            <div class="n-m-b-heading"></div>
                     <div class="ad-pd">
                         <div class="ad-pd col-md-3">
                             <img src="{{asset('images/kannan.jpg')}}" class="img-circle">
@@ -179,7 +207,7 @@
                             </div>
                             <div id="change2" style="display: none;">
                             <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
-                    <h4>
+                    <h4><b>
                                 <p> <span style="color:#a5011f;"> MORNING</span></p>                        
 5.00 : 
 PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
@@ -228,7 +256,7 @@ Besides these "Kunjoonu" (Choroonu - first rice feeding ceremony for children) <
  </b></h4>
                             </div>
                             <div id="change3" style="display: none;">
-                                <h1 class="text-center"><span style="color:#a5011f"><b>Offerings</b></span></h1>
+                                <h1 class="text-center"><span style="color:#a5011f"><b>Offerings<b></span></h1>
                         <h4><b>
 May the blessings of God SREEKRISHNA SWAMI be bestowed upon you,
 <br> reduce agony and save lives through the limitless showering of His mercy.
@@ -273,45 +301,24 @@ PH -0471 2362600<br></b>
                                         <a href="{{url('/gallery4')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
                                     </div>
                                 </div>
-
                             </div>
+                        </div>
+                    </div>
 
-				    </div>
-<div class="col-md-12 ad-bd">
-				    		<div class="n-m-b-heading"><b>News Update</b></div>
-                                    <div class="ad-pd ">
-                                    <ul class="templatemo-submenu" style="background-color:#990000;">
-                                        <div class="scroll-up">
+                </div>
+              
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @include('layouts.footer')
+        @include('layouts.audio')
+        
+        <script src="/js/app.js"></script>
+        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 
-
-                                        <p><a href="#" style="color:#990000;">Navarathri</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Pallikettu</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Sapthaham</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
-                                            <br>
-                                            <br> 
-
-                                        </ul>
-                                    </div> 
-				    </div>
-				    </div></div>
-				    </div>
-				</div><!--row-->
-			</div><!--col-md-12-->
-		</div><!--Main div-->
-		@include('layouts.footer')
-		@include('layouts.audio')
-		
-	    <script src="/js/app.js"></script>
-	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
-
-	     
-	</body>
-</html>	
+         
+    </body>
+</html> 
