@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<div style="background-image:url('images/login4.jpg');min-height: 90vh; background-size: cover;">
+<div style="background-image:url('images/login4.jpg');min-height: 100vh; background-size: cover;">
 @section('content')
 
 <div class="container">

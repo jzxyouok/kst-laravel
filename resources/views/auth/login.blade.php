@@ -1,63 +1,73 @@
-@extends('layouts.app')
- <div style ="background-image:url('images/login4.jpg'); min-height: 90vh; background-size: cover;">
- @section('content')
 
-<div class="container">
+<div style="background-image:url('images/login4.jpg');min-height: 100vh; background-size: cover;">
+@include('layouts.app')
+
+@include('admin.partials.header')
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-7 col-md-offset-2">
-            <div class="panel panel-default" style="background-color:#e67300; color:#fff">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {{ csrf_field() }}
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default ad-bd-bd">
+                <div class="panel-heading">{{ trans('quickadmin::auth.login-login') }}</div>
+                <div class="panel-body" style="background-color:#e67300;color:#fff;">
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>{{ trans('quickadmin::auth.whoops') }}</strong> {{ trans('quickadmin::auth.some_problems_with_input') }}
+                            <br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                    <form class="form-horizontal"
+                          role="form"
+                          method="POST"
+                          action="{{ url('login') }}">
+                        <input type="hidden"
+                               name="_token"
+                               value="{{ csrf_token() }}">
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">{{ trans('quickadmin::auth.login-email') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                                <input type="email"
+                                       class="form-control ad-bd-bd"
+                                       name="email"
+                                       style="border-radius: 4px!Important;" 
+                                       value="{{ old('email') }}">
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">{{ trans('quickadmin::auth.login-password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
+                                <input type="password"
+                                       class="form-control ad-bd-bd"
+                                       name="password"
+                                       style="border-radius: 4px!Important;">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
-                                </div>
+                                <label>
+                                    <input type="checkbox"
+                                           name="remember">{{ trans('quickadmin::auth.login-remember_me') }}
+                                </label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit"
+                                        class="btn btn-primary ad-bd-bd"
+                                        style="margin-right: 15px; border-radius: 4px!Important;">
+                                    {{ trans('quickadmin::auth.login-btnlogin') }}
                                 </button>
-
-                                <a class="btn btn-link"  style="color:#fff" href="{{ url('/password/reset') }}">
-                                    Forgot Your Password?
-                                </a>
                             </div>
                         </div>
                     </form>
@@ -66,7 +76,6 @@
         </div>
     </div>
 </div>
-</div>
+@include('admin.partials.footer')
 @include('layouts.footer')
 @include('layouts.audio')
-@endsection

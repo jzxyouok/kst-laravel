@@ -44,6 +44,9 @@
  transform: translateY(-100%); 
  }
 }
+.col-md-* {
+	max-width: 100%;
+}
 </style>
 
 <!DOCTYPE html>
@@ -98,124 +101,86 @@
 					</ul>	
 			    </div>
 			</nav>
+
 			<marquee style="color: #990000; font-size:22px;">
 				<b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>
 			</marquee>
-		
-			<div class="container">
-			    <div class="row">
-			        <div class="col-lg-3 col-xs-12">
-			            <div class="row">
-			                <div class="col-xs-12 ad-bd-1">
-			                    <div class="n-m-b-heading">
-									<b>Dashboard</b>
-								</div>
-								<div class="ad-pd n-m-b-body">
-									<ul class="templatemo-submenu">
 
-						                <li id="change1-c"><a href="#">
-						                    <i class= "fa fa-sun-o" style='color:#F14700'></i> &nbsp; Daily Rituals </a></li>
-						                <li id="change2-c"><a href="#">
-						                    <i class= "fa fa-paper-plane"  style='color:#F14700'></i>&nbsp; &nbsp;Offerings </a></li>
-						                <li id="change3-c"><a href="#">
-						                    <i class= "fa fa-fire" style='color:#F14700'></i>&nbsp; &nbsp; Pooja Details </a></li>
-						                <li id="change4-c"><a href="#">
-						                  <i class= "fa fa-picture-o" style='color:#F14700'></i>&nbsp; &nbsp;Gallery </a></li>	        
-						                <li><a href="{{url('/online_vazhipad')}}">
-						                    <i class= "fa fa-credit-card-alt" style='color:#F14700'></i>&nbsp; Online Vazhipad </a></li>
-									</ul>
-								</div>
-				            </div>
-			            </div>
-			            <div class="row">
-			                <div class="col-xs-12 ad-bd-1 at-media-1">
-			                    <div>
-									<div class="n-m-b-heading"><b>News Update</b></div>
-									<div class="ad-pd ">
-									<ul class="templatemo-submenu" style="background-color:#990000;">
-										<div class="scroll-up">
+			<div class="col-md-12">
+				<div class="row">
+				    <div class="col-md-3 ad-bd">
+				    		<div class="n-m-b-heading">
+                                    <b>Dashboard</b>
+                                </div>
+                                <div class="ad-pd n-m-b-body">
+                                    <ul class="templatemo-submenu">
 
-
-										<p><a href="#" style="color:#990000;">Navarathri</a></p>
-											<br>
-											<p><a href="#" style="color:#990000;">Pallikettu</a></p>
-											<br>
-											<p><a href="#" style="color:#990000;">Sapthaham</a></p>
-											<br>
-											<p><a href="#" style="color:#990000;">Vishukanai</a></p>
-											<br>
-											<p><a href="#" style="color:#990000;">Vishukanai</a></p>
-											<br>
-											<p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
-											<br>
-											<br> 
-								  @foreach($newsfeed as $news)
-                 			 <div> <b> {{$news->message}}</b></div>
-          					</div>
-          					@endforeach	
-
-							<div>					
-										</div>
-
-										</ul>
-									</div>	
-								</div>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-lg-7 col-xs-12 ad-bd at-media-1">
-			            <div>
-			            	<div class="n-m-b-heading"></div>
-					<div class="ad-pd">
-						<div class="ad-pd col-md-3">
-							<img src="{{asset('images/kannan.jpg')}}" class="img-circle">
-						</div>
-						<div class="col-md-9" style="color: #4700b3;">
-							<div id="change1">
-							<h1 class="text-center"> ശ്രീകൃഷ്ണധ്യാനം</h1>
-							<h4>
-								കസ്തൂരി തിലകം ലലാട ഫലകേ
-				                <br>
-				                വക്ഷസ്ഥലേ കൗസ്തുഭം
-				                <br>
-				                നാസാഗ്രേ നവ  മൗക്തികം കരതലേ
-				                <br>
-				                വേണും കരേ കങ്കണം
-				                <br>
-				                സർവ്വാംഗേ ഹരിചന്ദനം ചകലയൻ
-				                <br>
-				                കണ്ധെ ച മുക്താ വലീം
-				                <br>
-				                ഗോപസ്ത്രീ പരിവേഷ്ട്ടിതോ വിജയതേ
-				                <br>
-				                ഗോപലച്ചുധാമണി
-				                <br>
-				                <br>
-				                സാരം :	നെറ്റിയിൽ കസ്തൂരിതിലകം.
-				                <br>
-				                മാറിൽ കൗസ്തുഭമണി, മൂക്കിൽ പവിഴം
-				                <br>
-				                പതിച്ച നാസാമണി, കരതളിരുകളിൽ
-				                <br>
-				                വേണു, കൈത്തണ്ടയിൽ  കങ്കണം
-				                <br>
-				                ദേഹമാസകലം ചന്ദനം, കഴുത്തിൽ
-				                <br>
-				                മുത്തുമാല, അങ്ങനെ ഗോപാലന്മാർക്കു
-				                <br>
-				                ശിരോലങ്കാരമായ കൃഷ്ണൻ
-				                <br>
-				                ഗോപാംഗനകളാൽ ചുറ്റപ്പെട്ട്  വിജയിച്ചരുളുന്നു.
-				                <br>
-				                <br>
-				                <br>
-				                <br>
-				            </h4>
-				            </div>
-				            <div id="change2" style="display: none;">
-				            <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
-					<h4><b>
-				            	<p> <span style="color:#a5011f;"> MORNING</span></p> 						
+                                        <li id="change1-c"><a href="#">
+                                            <i class= "fa fa-sun-o" style='color:#F14700'></i> &nbsp; Daily Rituals </a></li>
+                                        <li id="change2-c"><a href="#">
+                                            <i class= "fa fa-paper-plane"  style='color:#F14700'></i>&nbsp; &nbsp;Offerings </a></li>
+                                        <li id="change3-c"><a href="#">
+                                            <i class= "fa fa-fire" style='color:#F14700'></i>&nbsp; &nbsp; Pooja Details </a></li>
+                                        <li id="change4-c"><a href="#">
+                                          <i class= "fa fa-picture-o" style='color:#F14700'></i>&nbsp; &nbsp;Gallery </a></li>          
+                                        <li><a href="{{url('/online_vazhipad')}}">
+                                            <i class= "fa fa-credit-card-alt" style='color:#F14700'></i>&nbsp; Online Vazhipad </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+				    
+				    <div class="col-md-9 ad-bd ad-pd-0">
+				    		<div class="n-m-b-heading"></div>
+                    <div class="ad-pd">
+                        <div class="ad-pd col-md-3">
+                            <img src="{{asset('images/kannan.jpg')}}" class="img-circle">
+                        </div>
+                        <div class="col-md-9" style="color: #4700b3;">
+                            <div id="change1">
+                            <h1 class="text-center"> ശ്രീകൃഷ്ണധ്യാനം</h1>
+                            <h4>
+                                കസ്തൂരി തിലകം ലലാട ഫലകേ
+                                <br>
+                                വക്ഷസ്ഥലേ കൗസ്തുഭം
+                                <br>
+                                നാസാഗ്രേ നവ  മൗക്തികം കരതലേ
+                                <br>
+                                വേണും കരേ കങ്കണം
+                                <br>
+                                സർവ്വാംഗേ ഹരിചന്ദനം ചകലയൻ
+                                <br>
+                                കണ്ധെ ച മുക്താ വലീം
+                                <br>
+                                ഗോപസ്ത്രീ പരിവേഷ്ട്ടിതോ വിജയതേ
+                                <br>
+                                ഗോപലച്ചുധാമണി
+                                <br>
+                                <br>
+                                സാരം :  നെറ്റിയിൽ കസ്തൂരിതിലകം.
+                                <br>
+                                മാറിൽ കൗസ്തുഭമണി, മൂക്കിൽ പവിഴം
+                                <br>
+                                പതിച്ച നാസാമണി, കരതളിരുകളിൽ
+                                <br>
+                                വേണു, കൈത്തണ്ടയിൽ  കങ്കണം
+                                <br>
+                                ദേഹമാസകലം ചന്ദനം, കഴുത്തിൽ
+                                <br>
+                                മുത്തുമാല, അങ്ങനെ ഗോപാലന്മാർക്കു
+                                <br>
+                                ശിരോലങ്കാരമായ കൃഷ്ണൻ
+                                <br>
+                                ഗോപാംഗനകളാൽ ചുറ്റപ്പെട്ട്  വിജയിച്ചരുളുന്നു.
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </h4>
+                            </div>
+                            <div id="change2" style="display: none;">
+                            <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
+                    <h4>
+                                <p> <span style="color:#a5011f;"> MORNING</span></p>                        
 5.00 : 
 PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
 5.10 : 
@@ -261,17 +226,17 @@ Besides these "Kunjoonu" (Choroonu - first rice feeding ceremony for children) <
 <br>
 <br>
  </b></h4>
-				            </div>
-				            <div id="change3" style="display: none;">
-				            	<h1 class="text-center"><span style="color:#a5011f"><b>Offerings<b></span></h1>
-						<h4><b>
+                            </div>
+                            <div id="change3" style="display: none;">
+                                <h1 class="text-center"><span style="color:#a5011f"><b>Offerings</b></span></h1>
+                        <h4><b>
 May the blessings of God SREEKRISHNA SWAMI be bestowed upon you,
 <br> reduce agony and save lives through the limitless showering of His mercy.
 <br>
 Contributions are welcome from individuals and organisations.
 <br>
 <br>
-<div class="alert alert-info" role="alert">	
+<div class="alert alert-info" role="alert"> 
 Cheques and drafts drawn in favour of <br>
 "Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST " 
 <br> sent to the following address.
@@ -286,40 +251,61 @@ PH -0471 2362600<br></b>
 </div>
 
 
-				              
-				            </h4>
-				            </div>
-				            <div id="change4" style="display:none;">
-				            	<h1 class="text-center"><span style="color:#a5011f"><b>Pooja Details</b></span></h1>
-				            </div>
-				            <div id="change5" style="display: none;">
-				            	<h1 class="text-center"><span style="color:#a5011f"><b>Gallery</b></span></h1>
-				            	<div class="col-md-12">
-				            		<div class="col-md-6">
-				            			<a href="{{url('/gallery1')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
-				            		</div>
-				            		<div class="col-md-6">
-				            			<a href="{{url('/gallery2')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
-				            		</div>
-				            		<div class="col-md-6">
-				            			<a href="{{url('/gallery3')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
-				            		</div>
-				            		<div class="col-md-6">
-				            			<a href="{{url('/gallery4')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
-				            		</div>
-				            	</div>
-				            </div>
-						</div>
-	        		</div>
+                              
+                            </h4>
+                            </div>
+                            <div id="change4" style="display:none;">
+                                <h1 class="text-center"><span style="color:#a5011f"><b>Pooja Details</b></span></h1>
+                            </div>
+                            <div id="change5" style="display: none;">
+                                <h1 class="text-center"><span style="color:#a5011f"><b>Gallery</b></span></h1>
+                                <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <a href="{{url('/gallery1')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="{{url('/gallery2')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="{{url('/gallery3')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="{{url('/gallery4')}}"><img class="img-index" src="{{asset('images/dummyimage.png')}}" style="width: 100%;"></a>
+                                    </div>
+                                </div>
 
-	        	</div>
-		      
-	        </div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-		</div>
+                            </div>
+
+				    </div>
+<div class="col-md-12 ad-bd">
+				    		<div class="n-m-b-heading"><b>News Update</b></div>
+                                    <div class="ad-pd ">
+                                    <ul class="templatemo-submenu" style="background-color:#990000;">
+                                        <div class="scroll-up">
+
+
+                                        <p><a href="#" style="color:#990000;">Navarathri</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Pallikettu</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Sapthaham</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
+                                            <br>
+                                            <p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
+                                            <br>
+                                            <br> 
+
+                                        </ul>
+                                    </div> 
+				    </div>
+				    </div></div>
+				    </div>
+				</div><!--row-->
+			</div><!--col-md-12-->
+		</div><!--Main div-->
 		@include('layouts.footer')
 		@include('layouts.audio')
 		

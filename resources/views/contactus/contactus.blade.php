@@ -1,45 +1,4 @@
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
+<!--div><img src="{{asset('images/background.jpg')}}"></div-->
 <!DOCTYPE html>
     <html>
     <head>
@@ -74,16 +33,32 @@ function test_input($data) {
             </div>
           </div>
         </nav>
-        <form class="ad-form" method="post" action="{{htmlspecialchars($_SERVER["PHP_SELF"])}}"> 
-            <input class="form-control"  placeholder="Name...*" type="text" name="name" value="{{$name}}">
-            <span class="error">* {{$nameErr}}</span><br>
-            <input class="form-control" placeholder="Email...*" type="email" name="email" value="{{$email}}">
-            <span class="error">* {{$emailErr}}</span><br>
-            <textarea class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40">{{$comment}}</textarea><br>
-            <input type="submit" class="btn btn-success" name="submit" value="Send">
-        </form>
+        <div class="col-md-12">
+          <div class="col-md-6" style="color: #fff;">
+            <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2> 
+            <h4><strong>MAZHUTHANKUZHY, KESAVAPURAM ROAD</strong></h4>
+            <h4><strong>PIN CODE 695 030, PHONE-0471 2362600</strong></h4>
+          </div>
+          <div class="col-md-6" style="padding-right: 30px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15783.379663305952!2d76.98001404760743!3d8.514434365177046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddcb74252996ab11!2sKeshavapuram+Srikrishna+Swamy+Temple!5e0!3m2!1sen!2sin!4v1474152170481" width="600" height="450" frameborder="0" style="border:0;width: 100%; " allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2" style="margin-bottom: 5%; padding-top: 5%; ">
+          <div class="panel panel-default" style="background: #e67300; color: #fff; border: 0; box-shadow: 0 0 30px 3px #eee;">
+          <div class="panel panel-heading">FeedBack</div>
+            <div class="panel panel-body"  style="background: #e67300; color: #fff;">
+              <form class="ad-form col-md-12" method="post" action="/contact_us/send"> 
+                  <input class="form-control"  placeholder="Name...*" type="text" name="name">
+                  <br>
+                  <input class="form-control" placeholder="Email...*" type="email" name="email">
+                  <br>
+                  <textarea class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40"></textarea><br>
+                  <input type="submit" class="btn btn-success" name="submit" value="Send">
+              </form>
+            </div>
+          </div>
+        </div> 
 
-        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15783.379663305952!2d76.98001404760743!3d8.514434365177046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddcb74252996ab11!2sKeshavapuram+Srikrishna+Swamy+Temple!5e0!3m2!1sen!2sin!4v1474152170481" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="ad-icon text-left">
             <li><a href="https://www.facebook.com/KesavapuramSreekrishnaSwamyTemple/"><i class="fa-1 fa fa-facebook fa-ad"></i></a></li>
             <li><a href="#"><i class="fa-1 fa fa-linkedin fa-ad"></i></a></li>
