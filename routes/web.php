@@ -18,6 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+Route::get('/online_vazhipad', 'onlinevazhipadController@index');  
+
+Route::get('/ajax-subcat','onlinevazhipadControlle@ajax');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -43,4 +50,3 @@ Route::get('/gallery2', 'galleryController@gallery2');
 Route::get('/gallery3', 'galleryController@gallery3');
 
 Route::get('/gallery4', 'galleryController@gallery4');
-

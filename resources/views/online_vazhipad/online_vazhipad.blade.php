@@ -71,28 +71,29 @@
 														<option value="">Add...</option>
 													</select>
 												</div><br><br>
-
+												
 												<div class="col-md-4">
 													<strong>Vazhipad Type: </strong>
 												</div>
+
 												<div class="col-md-8 input-group-sm">
-													<select class="form-control">
-														<option value="">Add...</option>
-														<option value="">Add...</option>
-														<option value="">Add...</option>
-														<option value="">Add...</option>
+													<select class="form-control" name="category" id="category">
+													@foreach($categories as $category) 
+														<option value="{{$category->id}}">{{$category->name}}</option>
+													@endforeach	
 													</select>
 												</div><br><br>
 												
 												<div class="col-md-4">
 													<strong>Vazhipad Name:</strong>
 												</div>
-													<div class="col-md-8 input-group-sm"><select name="" id="" class="form-control">
-															<option value="">Add...</option>
-															<option value="">Add...</option>
+													<div class="col-md-8 input-group-sm">
+													<select name="" id="" class="form-control" name="subcategory" id="kst-subcategory">
+															
 															<option value="">Add...</option>
 														</select>
 												</div><br><br>
+												
 												<div class="col-md-4">
 													<strong>Your Star (nakshatram):</strong>
 												</div>
@@ -217,9 +218,24 @@
 		        	</div>
 
 		        @endif
+		<script src="/js/app.js"></script>
+		<script>
+			$('#category').on('change',function(e){
+				console.log(e);
+				var cat_id = e.target.value;
+				$.get('/ajax-subcat?cat_id='+cat_id,function(data){
+
+					$('#kst-subcategory').empty();
+					$.each(data, function(index, subcatObj) {
+						$('#kst-subcategory').append('<option value"'+subcatObj.id+'">'+subcatObj.name+'</option');
+
+					});
+				});
+			});	
+		</script>        
 		@include('layouts.footer')
 		@include('layouts.audio')
-	    <script src="/js/app.js"></script>
+	    
 	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>   
 	</head>	        
 	</html>

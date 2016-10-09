@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\category;
+use App\subcategory;
 
 class onlinevazhipadController extends Controller
 {
@@ -15,7 +17,15 @@ class onlinevazhipadController extends Controller
      */
     public function index()
     {
-        return view('online_vazhipad/online_vazhipad');
+
+        $categories = category::all();
+        //$subcategories = category::all();
+        return view('online_vazhipad.online_vazhipad')->with('categories', $categories);
+    }
+    public function ajax() {
+        $cat_id = Input::get('cat_id');
+        $subcategories = subcategory::where('cat_id','=',$cat_id)->get();
+        return Response::json($subcategories);
     }
 
     /**
