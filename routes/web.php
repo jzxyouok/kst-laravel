@@ -30,7 +30,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/contact_us', 'contactusController@index');
-Route::get('/contact_us/send', 'contactusCOntroller@send');
 
 Route::get('/upadevas', 'upadevasController@index');
 
