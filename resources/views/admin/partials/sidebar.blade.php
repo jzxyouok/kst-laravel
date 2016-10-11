@@ -30,13 +30,14 @@
                     </a>
                 </li>
             @else
-                <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+
+                <a href="/online_vazhipad" id="ad-select-auto"></a>
+                <script src="/js/app.js"></script>
                 <script type="text/javascript">
-                $(document).ready(function() {
-                    document.getElementById('submit-auto-kst').click();
-                })
+                    $(document).ready(function() {
+                        document.getElementById("ad-select-auto").click();
+                    });
                 </script>
-                <a href="{{url('/online_vazhipad')}}" id="submit-auto-kst"></a>
             @endif
             @foreach($menus as $menu)
                 @if($menu->menu_type != 2 && is_null($menu->parent_id))
@@ -47,7 +48,6 @@
                                 <span class="title">{{ $menu->title }}</span>
                             </a>
                         </li>
-
                     @endif
                 @else
                     @if(Auth::user()->role->canAccessMenu($menu) && !is_null($menu->children()->first()) && is_null($menu->parent_id))

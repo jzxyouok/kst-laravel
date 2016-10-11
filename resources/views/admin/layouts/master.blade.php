@@ -9,7 +9,7 @@
         <div class="page-content">
 
             <h3 class="page-title">
-                {{ preg_replace('/([a-z0-9])?([A-Z])/','$1 $2',str_replace('Controller','',explode("@",class_basename(app('request')->route()->getAction()['controller']))[0])) }}
+                KESAVAPURAM SREEKRISHNASWAMY TEMPLE
             </h3>
 
             <div class="row">
@@ -20,9 +20,9 @@
                             <p>{{ Session::get('message') }}</p>
                         </div>
                     @endif
-                    
 
                     @yield('content')
+
                 </div>
             </div>
 

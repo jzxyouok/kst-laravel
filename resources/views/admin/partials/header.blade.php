@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        Admin
+        {{ trans('quickadmin::admin.partials-header-title') }}
     </title>
 
     <meta http-equiv="X-UA-Compatible"
