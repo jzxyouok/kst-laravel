@@ -1,54 +1,3 @@
-<style style="text/css">
-.scroll-up {
- height: 220px;	
- overflow: hidden;
- position: relative;
- background: yellow;
- color: #990000;
- border:NULL;
-}
-.scroll-up p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: left; 
- /* Starting position */
- -moz-transform:translateY(100%);
- -webkit-transform:translateY(100%);	
- transform:translateY(100%);
- /* Apply animation to this element */	
- -moz-animation: scroll-up 15s linear infinite;
- -webkit-animation: scroll-up 5s linear infinite;
- animation: scroll-up 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes scroll-up {
- 0%   { -moz-transform: translateY(100%); }
- 100% { -moz-transform: translateY(-100%); }
-}
-@-webkit-keyframes scroll-up {
- 0%   { -webkit-transform: translateY(100%); }
- 100% { -webkit-transform: translateY(-100%); }
-}
-@keyframes scroll-up {
- 0%   { 
- -moz-transform: translateY(100%); /* Browser bug fix */
- -webkit-transform: translateY(100%); /* Browser bug fix */
- transform: translateY(100%); 		
- }
- 100% { 
- -moz-transform: translateY(-100%); /* Browser bug fix */
- -webkit-transform: translateY(-100%); /* Browser bug fix */
- transform: translateY(-100%); 
- }
-}
-.col-md-* {
-	max-width: 100%;
-}
-</style>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -73,13 +22,6 @@
 	            'csrfToken' => csrf_token(),
 	        ]); ?>
 	    </script>
-
-
-
-        <script>
-        $(function() {
-          $(".rslides").responsiveSlides();
-        });
         </script>
 	</head>
 	<body>
@@ -106,12 +48,13 @@
 				<b>ഹരേ	രാമ		ഹരേ	രാമ	....രാമ	രാമ		ഹരേ	ഹരേ...........ഹരേ		കൃഷ്ണ	ഹരേ	കൃഷ്ണ.......കൃഷ്ണ കൃഷ്ണ	ഹരേ	ഹരേ...</b>
 			</marquee>
 
-			<div class="col-md-12">
-				<div class="row">
-				    <div class="col-md-3 ad-bd">
+			<div class="col-md-12 ad-pd-0">
+				<div><!--row-->
+				    <div class="col-md-3 ad-pd-0">
+                        <div class="col-md-12 ad-bd ad-pd-0"> 
 				    		<div class="n-m-b-heading">
-                                    <b>Dashboard</b>
-                                </div>
+                                <b>Dashboard</b>
+                            </div>
                                 <div class="ad-pd n-m-b-body">
                                     <ul class="templatemo-submenu">
 
@@ -127,7 +70,32 @@
                                             <i class= "fa fa-credit-card-alt" style='color:#F14700'></i>&nbsp; Online Vazhipad </a></li>
                                     </ul>
                                 </div>
-                            </div>
+                        </div>
+                        <div class="col-md-12 ad-bd">
+                            <div class="n-m-b-heading"><b>News Update</b></div>
+                                <div class="ad-pd ">
+                                    <ul class="templatemo-submenu" style="background-color:#990000;">
+                                        <marquee scrolldelay="200" direction="up" style="width: 100%; background: yellow;">
+
+                                            <a href="#" style="color:#990000;">Navarathri</a>
+                                            <br>
+                                            <a href="#" style="color:#990000;">Pallikettu</a>
+                                            <br>
+                                            <a href="#" style="color:#990000;">Sapthaham</a>
+                                            <br>
+                                            <a href="#" style="color:#990000;">Vishukanai</a>
+                                            <br>
+                                            <a href="#" style="color:#990000;">Vishukanai</a>
+                                            <br>
+                                            <a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a>
+                                            <br>
+                                            <br> 
+                                        </marquee>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
 				    
 				    <div class="col-md-9 ad-bd ad-pd-0">
 				    		<div class="n-m-b-heading"></div>
@@ -181,74 +149,74 @@
                             <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
                     <h4>
                                 <p> <span style="color:#a5011f;"> MORNING</span></p>                        
-5.00 : 
-PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
-5.10 : 
-NIRMALYADARSANAM<br>
-5.35 : 
-ABHISHEKAM (ABLUTIONS OF THE IDOL IN OIL, MILK ETC.)<br>
-5.45 : 
-GANAPATHY HOMAM (SPECIFIC OFFERING TO GOD VINAYAKA)<br>
-6.00 : 
-DEEPARADHANA (BURNING INCENSE AND LIGHTING LAMPS TO THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;HONOUR AND GLORY OF THE ALMIGHTY)<br>
-6.30 : 
-USHA POOJA (MORNING RITE)<br>
-6.40 : 
-DEEPARADHANA<br>
-8.30 : 
-NIVEDHYAM<br>
-9.00 : 
-PRASANNA POOJA<br>
-10.00 :  
-NIVEDHYAM<br>
-11.00 : 
-UCHA POOJA<br>
-11.30 : 
-NADA ADAKUNNU<br>
-<br>
-<br>
-<p> <span style="color:#a5011f;">EVENING</span></p> 
- 5.00 : NADA THURAPPU (OPENING OF SREEKOVIL)<br>
-6.45 : 
-DEEPARADHANA<br>
-7.30 : 
-ATHAZHA POOJA (NIGHT RITE)<br>
-8.00 : 
-DEEPARADHANA (NIGHT RITE)<br>
-8.05 : 
-NADA ADAKUNNU<br>
-<br>
-<div class="alert alert-info" role="alert">
-POOJA TIMINGS MAY BE ALTERED ON SPECIAL OCCASIONS<br>
+                            5.00 : 
+                            PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
+                            5.10 : 
+                            NIRMALYADARSANAM<br>
+                            5.35 : 
+                            ABHISHEKAM (ABLUTIONS OF THE IDOL IN OIL, MILK ETC.)<br>
+                            5.45 : 
+                            GANAPATHY HOMAM (SPECIFIC OFFERING TO GOD VINAYAKA)<br>
+                            6.00 : 
+                            DEEPARADHANA (BURNING INCENSE AND LIGHTING LAMPS TO THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;HONOUR AND GLORY OF THE ALMIGHTY)<br>
+                            6.30 : 
+                            USHA POOJA (MORNING RITE)<br>
+                            6.40 : 
+                            DEEPARADHANA<br>
+                            8.30 : 
+                            NIVEDHYAM<br>
+                            9.00 : 
+                            PRASANNA POOJA<br>
+                            10.00 :  
+                            NIVEDHYAM<br>
+                            11.00 : 
+                            UCHA POOJA<br>
+                            11.30 : 
+                            NADA ADAKUNNU<br>
+                            <br>
+                            <br>
+                            <p> <span style="color:#a5011f;">EVENING</span></p> 
+                             5.00 : NADA THURAPPU (OPENING OF SREEKOVIL)<br>
+                            6.45 : 
+                            DEEPARADHANA<br>
+                            7.30 : 
+                            ATHAZHA POOJA (NIGHT RITE)<br>
+                            8.00 : 
+                            DEEPARADHANA (NIGHT RITE)<br>
+                            8.05 : 
+                            NADA ADAKUNNU<br>
+                            <br>
+                            <div class="alert alert-info" role="alert">
+                            POOJA TIMINGS MAY BE ALTERED ON SPECIAL OCCASIONS<br>
 
-Besides these "Kunjoonu" (Choroonu - first rice feeding ceremony for children) <br>Thulabharam, Vidyarambham, Archana etc.<br> can be done at this temple.<br>
-</div>
-<br>
-<br>
- </b></h4>
+                            Besides these "Kunjoonu" (Choroonu - first rice feeding ceremony for children) <br>Thulabharam, Vidyarambham, Archana etc.<br> can be done at this temple.<br>
                             </div>
-                            <div id="change3" style="display: none;">
-                                <h1 class="text-center"><span style="color:#a5011f"><b>Offerings</b></span></h1>
-                        <h4><b>
-May the blessings of God SREEKRISHNA SWAMI be bestowed upon you,
-<br> reduce agony and save lives through the limitless showering of His mercy.
-<br>
-Contributions are welcome from individuals and organisations.
-<br>
-<br>
-<div class="alert alert-info" role="alert"> 
-Cheques and drafts drawn in favour of <br>
-"Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST " 
-<br> sent to the following address.
-<br>
-<br>
-Secretary<br>
-KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST<br>
-MARUTHAMKUZHY<br>
-THIRUVANANTHAPURAM<br>
-PIN CODE -695 030<br>
-PH -0471 2362600<br></b>
-</div>
+                            <br>
+                            <br>
+                             </b></h4>
+                                                        </div>
+                                                        <div id="change3" style="display: none;">
+                                                            <h1 class="text-center"><span style="color:#a5011f"><b>Offerings</b></span></h1>
+                                                    <h4><b>
+                            May the blessings of God SREEKRISHNA SWAMI be bestowed upon you,
+                            <br> reduce agony and save lives through the limitless showering of His mercy.
+                            <br>
+                            Contributions are welcome from individuals and organisations.
+                            <br>
+                            <br>
+                            <div class="alert alert-info" role="alert"> 
+                            Cheques and drafts drawn in favour of <br>
+                            "Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST " 
+                            <br> sent to the following address.
+                            <br>
+                            <br>
+                            Secretary<br>
+                            KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST<br>
+                            MARUTHAMKUZHY<br>
+                            THIRUVANANTHAPURAM<br>
+                            PIN CODE -695 030<br>
+                            PH -0471 2362600<br></b>
+                            </div>
 
 
                               
@@ -277,31 +245,7 @@ PH -0471 2362600<br></b>
                             </div>
 
 				    </div>
-<div class="col-md-12 ad-bd">
-				    		<div class="n-m-b-heading"><b>News Update</b></div>
-                                    <div class="ad-pd ">
-                                    <ul class="templatemo-submenu" style="background-color:#990000;">
-                                        <div class="scroll-up">
-
-
-                                        <p><a href="#" style="color:#990000;">Navarathri</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Pallikettu</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Sapthaham</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Vishukanai</a></p>
-                                            <br>
-                                            <p><a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a></p>
-                                            <br>
-                                            <br> 
-
-                                        </ul>
-                                    </div> 
-				    </div>
-				    </div></div>
+                        
 				    </div>
 				</div><!--row-->
 			</div><!--col-md-12-->

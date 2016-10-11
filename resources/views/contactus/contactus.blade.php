@@ -47,12 +47,13 @@
           <div class="panel panel-default" style="background: #e67300; color: #fff; border: 0; box-shadow: 0 0 30px 3px #eee;">
           <div class="panel panel-heading">FeedBack</div>
             <div class="panel panel-body"  style="background: #e67300; color: #fff;">
-              <form class="ad-form col-md-12" method="post" action="#"> 
-                  <input class="form-control"  placeholder="Name...*" type="text" name="name">
+              <form class="ad-form col-md-12" method="POST" action="/contact_us/send">
+                  {{ csrf_field() }}
+                  <input class="form-control"  placeholder="Name...*" type="text" name="name" required="required">
                   <br>
-                  <input class="form-control" placeholder="Email...*" type="email" name="email">
+                  <input class="form-control" placeholder="Email...*" type="email" name="email" required="required">
                   <br>
-                  <textarea class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40"></textarea><br>
+                  <textarea required="required" class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40"></textarea><br>
                   <input type="submit" class="btn btn-success" name="submit" value="Send">
               </form>
             </div>

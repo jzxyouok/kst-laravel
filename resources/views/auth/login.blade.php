@@ -1,14 +1,12 @@
-
 <div style="background-image:url('images/login4.jpg');min-height: 100vh; background-size: cover;">
 @include('layouts.app')
-
 @include('admin.partials.header')
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-default ad-bd-bd">
+            <div class="panel panel-default" style="background-color:#e67300;color:#fff; border-radius: 4px!Important;">
                 <div class="panel-heading">{{ trans('quickadmin::auth.login-login') }}</div>
-                <div class="panel-body" style="background-color:#e67300;color:#fff;">
+                <div class="panel-body">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <strong>{{ trans('quickadmin::auth.whoops') }}</strong> {{ trans('quickadmin::auth.some_problems_with_input') }}
@@ -34,7 +32,7 @@
 
                             <div class="col-md-6">
                                 <input type="email"
-                                       class="form-control ad-bd-bd"
+                                       class="form-control"
                                        name="email"
                                        style="border-radius: 4px!Important;" 
                                        value="{{ old('email') }}">
@@ -46,9 +44,9 @@
 
                             <div class="col-md-6">
                                 <input type="password"
-                                       class="form-control ad-bd-bd"
-                                       name="password"
-                                       style="border-radius: 4px!Important;">
+                                       class="form-control"
+                                       style="border-radius: 4px!Important;" 
+                                       name="password">
                             </div>
                         </div>
 
@@ -64,7 +62,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit"
-                                        class="btn btn-primary ad-bd-bd"
+                                        class="btn btn-primary"
                                         style="margin-right: 15px; border-radius: 4px!Important;">
                                     {{ trans('quickadmin::auth.login-btnlogin') }}
                                 </button>
