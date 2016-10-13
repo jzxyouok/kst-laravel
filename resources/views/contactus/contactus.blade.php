@@ -43,7 +43,7 @@
         @endif
           <div class="col-md-6" style="color: #fff;">
             <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2> 
-            <h4><strong>MAZHUTHANKUZHY, KESAVAPURAM ROAD</strong></h4>
+            <h4><strong>MAZHUTHAMKUZHY, KESAVAPURAM ROAD</strong></h4>
             <h4><strong>PIN CODE 695 030, PHONE-0471 2362600</strong></h4>
           </div>
           <div class="col-md-6" style="padding-right: 30px;">
