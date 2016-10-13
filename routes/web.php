@@ -31,10 +31,10 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/contact_us', 'contactusController@index')->name('home');
 Route::any('contact_us/send', function() {
-	Mail::send('contactus.send', ['name' => 'Advaith'], function($message) {
+	Mail::send('contactus.send', ['name' => 'HARI'], function($message) {
     	$name = $_POST['name']; 
     	$from = $_POST['email'];
-     	$message->to('advaitharunjeena@gmail.com')->from($from)->subject('Feed Back');
+     	$message->to('hkk710@gmail.com')->from($from)->subject('Feed Back');
   	});
   	return view('contactus.done');
 });
