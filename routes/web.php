@@ -36,7 +36,8 @@ Route::any('contact_us/send', function() {
     	$from = $_POST['email'];
      	$message->to('hkk710@gmail.com')->from($from)->subject('Feed Back');
   	});
-  	return view('contactus.done');
+  	Session::flash('success', 'Your Email was sent successfully. Thankyou for your valuable FeedBack.');
+  	return view('contactus.contactus');
 });
 
 Route::get('/upadevas', 'upadevasController@index');

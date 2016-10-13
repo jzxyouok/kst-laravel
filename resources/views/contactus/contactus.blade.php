@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+        <link rel="stylesheet" type="text/css" href="/css/parsley.css">
 
         <!-- Styles -->
         <link href="/css/app.css" rel="stylesheet">
@@ -34,6 +35,12 @@
           </div>
         </nav>
         <div class="col-md-12">
+        @if (Session::has('success'))
+          <div class="alert alert-success">
+            <a href="#" data-dismiss="alert" class="close">&times;</a>
+            {{Session::get('success')}}
+          </div>
+        @endif
           <div class="col-md-6" style="color: #fff;">
             <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2> 
             <h4><strong>MAZHUTHANKUZHY, KESAVAPURAM ROAD</strong></h4>
@@ -47,13 +54,13 @@
           <div class="panel panel-default" style="background: #e67300; color: #fff; border: 0; box-shadow: 0 0 30px 3px #eee;">
           <div class="panel panel-heading">FeedBack</div>
             <div class="panel panel-body"  style="background: #e67300; color: #fff;">
-              <form class="ad-form col-md-12" method="POST" action="/contact_us/send">
+              <form class="ad-form col-md-12" method="POST" action="/contact_us/send" data-parsley-validate>
                   {{ csrf_field() }}
-                  <input class="form-control"  placeholder="Name...*" type="text" name="name" required="required">
+                  <input class="form-control"  placeholder="Name...*" type="text" name="name" required="required" maxlength="255">
                   <br>
-                  <input class="form-control" placeholder="Email...*" type="email" name="email" required="required">
+                  <input class="form-control" placeholder="Email...*" type="email" name="email" required="required" maxlength="255">
                   <br>
-                  <textarea required="required" class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40"></textarea><br>
+                  <textarea required="required" class="form-control ad-textarea" placeholder="Your valuable feedback...*" name="comment" rows="5" cols="40" minlength="5"></textarea><br>
                   <input type="submit" class="btn btn-success" name="submit" value="Send">
               </form>
             </div>
@@ -69,6 +76,7 @@
             <source src="{{asset('sounds/click.mp3')}}">
         </audio>
         <script src="/js/app.js"></script>
+        <script type="text/javascript" src="/js/parsley.min.js"></script>
         <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
     </body>
     @include('layouts.footer')
