@@ -12,7 +12,7 @@
 				<div>
 					<hr>
 					Account Details: 
-					<div>Nanme: {{ Auth::user()->name }}</div>
+					<div>Name : {{ Auth::user()->name }}</div>
 					<div>Email: {{ Auth::user()->email }}</div>
 				</div>
 			@endif
