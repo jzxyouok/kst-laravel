@@ -14,15 +14,13 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'HomeController@home', 'as' => 'welcome']);
 
 
 
 Route::get('/online_vazhipad', 'onlinevazhipadController@index');  
 
-Route::get('/ajax-subcat','onlinevazhipadControlle@ajax');
+Route::get('/ajax-subcat','onlinevazhipadController@ajax');
 
 
 Auth::routes();
@@ -30,15 +28,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/contact_us', 'contactusController@index')->name('home');
-Route::any('contact_us/send', function() {
-	Mail::send('contactus.send', ['name' => 'HARI'], function($message) {
-    	$name = $_POST['name']; 
-    	$from = $_POST['email'];
-     	$message->to('hkk710@gmail.com')->from($from)->subject('Feed Back');
-  	});
-  	Session::flash('success', 'Your Email was sent successfully. Thankyou for your valuable FeedBack.');
-  	return view('contactus.contactus');
-});
+Route::post('contact_us/send', 'contactusController@sendmail');
 
 Route::get('/upadevas', 'upadevasController@index');
 

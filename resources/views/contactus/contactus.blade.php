@@ -41,6 +41,16 @@
             {{Session::get('success')}}
           </div>
         @endif
+        @if (count($errors) > 0)
+          <div class="alert alert-danger text-left">
+              Errors:
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+          </div>
+        @endif
           <div class="col-md-6" style="color: #fff;">
             <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2> 
             <h4><strong>MAZHUTHAMKUZHY, KESAVAPURAM ROAD</strong></h4>
