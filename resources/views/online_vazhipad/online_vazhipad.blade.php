@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html>
-		<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('main')
+@section('title', 'Online Vazhipad')
 
-	    <!-- CSRF Token -->
-	    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-	    <title>Online Vazhipad</title>
-	    <link rel="icon" href="{{asset('favicon.ico')}}">
-	    <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
-	    <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
-
-	    <!-- Styles -->
-	    <link href="/css/app.css" rel="stylesheet">
-
-	    <!-- Scripts -->
-	    <script>
-	        window.Laravel = <?php echo json_encode([
-	            'csrfToken' => csrf_token()
-	        ]);  ?>
-	    </script>
-	    <nav class="navbar navbar-default">
-          <div class="box-shadow">
-            <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-              <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
-            </div>
-          </div>
-        </nav>
+@section('content')
 
 	  @if (Auth::guest())
 		        	<div class="col-md-12 " style="text-align: center;">
@@ -71,29 +44,26 @@
 														<option value="">Add...</option>
 													</select>
 												</div><br><br>
-												
+
 												<div class="col-md-4">
 													<strong>Vazhipad Type: </strong>
 												</div>
 
 												<div class="col-md-8 input-group-sm">
 													<select class="form-control" name="category" id="category">
-													@foreach($categories as $category) 
-														<option value="{{$category->id}}">{{$category->name}}</option>
-													@endforeach	
 													</select>
 												</div><br><br>
-												
+
 												<div class="col-md-4">
 													<strong>Vazhipad Name:</strong>
 												</div>
 													<div class="col-md-8 input-group-sm">
 													<select name="" id="" class="form-control" name="subcategory" id="kst-subcategory">
-															
+
 															<option value="">Add...</option>
 														</select>
 												</div><br><br>
-												
+
 												<div class="col-md-4">
 													<strong>Your Star (nakshatram):</strong>
 												</div>
@@ -212,30 +182,10 @@
 							</div>
 						</div>
 
-                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;"> 
+                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
                         </form>
 		        	</div>
 
 		        @endif
-		<script src="/js/app.js"></script>
-		<script>
-			$('#category').on('change',function(e){
-				console.log(e);
-				var cat_id = e.target.value;
-				$.get('/ajax-subcat?cat_id='+cat_id,function(data){
-
-					$('#kst-subcategory').empty();
-					$.each(data, function(index, subcatObj) {
-						$('#kst-subcategory').append('<option value"'+subcatObj.id+'">'+subcatObj.name+'</option');
-
-					});
-				});
-			});	
-		</script>        
-		@include('layouts.footer')
-		@include('layouts.audio')
-	    
-	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>   
-	</head>	        
-	</html>
+@endsection

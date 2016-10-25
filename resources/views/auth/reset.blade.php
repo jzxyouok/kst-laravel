@@ -74,3 +74,6 @@
     </div>
 </div>
 @include('admin.partials.footer')
+@include('partials._footer')
+@include('partials._audio')
+@include('partials._js')

@@ -11,17 +11,9 @@
 |
 */
 
-
-
-
 Route::get('/', ['uses' => 'HomeController@home', 'as' => 'welcome']);
 
-
-
-Route::get('/online_vazhipad', 'onlinevazhipadController@index');  
-
-Route::get('/ajax-subcat','onlinevazhipadController@ajax');
-
+Route::get('/online_vazhipad', 'onlinevazhipadController@index');
 
 Auth::routes();
 
@@ -40,9 +32,13 @@ Route::get('/facilities', 'facilitiesController@index');
 
 Route::get('/online_vazhipad', 'onlinevazhipadController@index');
 
-Route::get('/index', 'index_dropController@index');
-
 Route::get('/gallery1', 'galleryController@Gallery1');
 Route::get('/gallery2', 'galleryController@gallery2');
 Route::get('/gallery3', 'galleryController@gallery3');
 Route::get('/gallery4', 'galleryController@gallery4');
+
+Route::get('/online_vazhipad/mojo', 'MojoController@index');
+Route::get('/online_vazhipad/mojo/order', 'MojoController@order');
+Route::post('/online_vazhipad/mojo/pay', 'MojoController@pay');
+Route::get('/online_vazhipad/mojo/thankyou', 'MojoController@thankyou');
+Route::get('/online_vazhipad/mojo/webhook', 'MojoController@webhook');

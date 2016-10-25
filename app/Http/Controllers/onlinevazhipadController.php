@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\category;
 use App\subcategory;
+use Input;
 
 class onlinevazhipadController extends Controller
 {
@@ -17,17 +18,8 @@ class onlinevazhipadController extends Controller
      */
     public function index()
     {
-
-        $categories = category::all();
-        //$subcategories = category::all();
-        return view('online_vazhipad.online_vazhipad')->with('categories', $categories);
+        return view('online_vazhipad.online_vazhipad');
     }
-    public function ajax() {
-        $cat_id = Input::get('cat_id');
-        $subcategories = subcategory::where('cat_id','=',$cat_id)->get();
-        return Response::json($subcategories);
-    }
-
     /**
      * Show the form for creating a new resource.
      *
