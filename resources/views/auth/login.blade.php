@@ -34,7 +34,7 @@
                                 <input type="email"
                                        class="form-control"
                                        name="email"
-                                       style="border-radius: 4px!Important;" 
+                                       style="border-radius: 4px!Important;"
                                        value="{{ old('email') }}">
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-6">
                                 <input type="password"
                                        class="form-control"
-                                       style="border-radius: 4px!Important;" 
+                                       style="border-radius: 4px!Important;"
                                        name="password">
                             </div>
                         </div>
@@ -75,5 +75,6 @@
     </div>
 </div>
 @include('admin.partials.footer')
-@include('layouts.footer')
-@include('layouts.audio')
+@include('partials._footer')
+@include('partials._audio')
+@include('partials._js')

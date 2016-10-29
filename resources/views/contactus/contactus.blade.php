@@ -1,39 +1,14 @@
-<!--div><img src="{{asset('images/background.jpg')}}"></div-->
-<!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('main')
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+@section('title', 'Contact us')
 
-        <title>Contact Us</title>
-        <link rel="icon" href="{{asset('favicon.ico')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
-        <link rel="stylesheet" type="text/css" href="/css/parsley.css">
-
-        <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
-
-        <!-- Scripts -->
-        <script>
-            window.Laravel = <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-            ]); ?>
-        </script>
-    </head>
+@section('head')
+  <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
+  <link rel="stylesheet" type="text/css" href="/css/parsley.css">
+@endsection
+@section('content')
     <body class="text-center body">
-        <nav class="navbar navbar-default">
-          <div class="box-shadow">
-            <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-              <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
-            </div>
-          </div>
-        </nav>
         <div class="col-md-12">
         @if (Session::has('success'))
           <div class="alert alert-success">
@@ -41,8 +16,18 @@
             {{Session::get('success')}}
           </div>
         @endif
+        @if (count($errors) > 0)
+          <div class="alert alert-danger text-left">
+              Errors:
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+          </div>
+        @endif
           <div class="col-md-6" style="color: #fff;">
-            <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2> 
+            <h2><b>KESAVAPURAM SREEKRISHNASWAMY TEMPLE</b>,</h2>
             <h4><strong>MAZHUTHAMKUZHY, KESAVAPURAM ROAD</strong></h4>
             <h4><strong>PIN CODE 695 030, PHONE-0471 2362600</strong></h4>
           </div>
@@ -65,20 +50,15 @@
               </form>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="ad-icon text-left">
             <li><a href="https://www.facebook.com/KesavapuramSreekrishnaSwamyTemple/"><i class="fa-1 fa fa-facebook fa-ad"></i></a></li>
             <li><a href="#"><i class="fa-1 fa fa-linkedin fa-ad"></i></a></li>
             <li><a href="#"><i class="fa-1 fa fa-google-plus fa-ad"></i></a></li>
         </div>
-        <audio hidden id="audio">
-            <source src="{{asset('sounds/click.mp3')}}">
-        </audio>
-        <script src="/js/app.js"></script>
-        <script type="text/javascript" src="/js/parsley.min.js"></script>
-        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
-    </body>
-    @include('layouts.footer')
-    @include('layouts.audio')
-</html>
+@endsection
+
+@section('js')
+  <script type="text/javascript" src="/js/parsley.min.js"></script>
+@endsection

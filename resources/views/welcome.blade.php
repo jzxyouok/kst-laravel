@@ -40,7 +40,7 @@
 				        <li><a href="{{url('/activities')}}">Activities</a></li>
 				        <li><a href="{{url('/festivals')}}">Festivals</a></li>
 				        <li><a href="{{url('/facilities')}}">Facilities</a></li>
-					</ul>	
+					</ul>
 			    </div>
 			</nav>
 
@@ -51,7 +51,7 @@
 			<div class="col-md-12 ad-pd-0">
 				<div><!--row-->
 				    <div class="col-md-3 ad-pd-0">
-                        <div class="col-md-12 ad-bd ad-pd-0"> 
+                        <div class="col-md-12 ad-bd ad-pd-0">
 				    		<div class="n-m-b-heading">
                                 <b>Dashboard</b>
                             </div>
@@ -65,7 +65,7 @@
                                         <li id="change3-c"><a href="#">
                                             <i class= "fa fa-fire" style='color:#F14700'></i>&nbsp; &nbsp; Pooja Details </a></li>
                                         <li id="change4-c"><a href="#">
-                                          <i class= "fa fa-picture-o" style='color:#F14700'></i>&nbsp; &nbsp;Gallery </a></li>          
+                                          <i class= "fa fa-picture-o" style='color:#F14700'></i>&nbsp; &nbsp;Gallery </a></li>
                                         <li><a href="{{url('/online_vazhipad')}}">
                                             <i class= "fa fa-credit-card-alt" style='color:#F14700'></i>&nbsp; Online Vazhipad </a></li>
                                     </ul>
@@ -89,14 +89,14 @@
                                             <br>
                                             <a href="#" style="color:#990000;">Ashttamirohini Maholsavam</a>
                                             <br>
-                                            <br> 
+                                            <br>
                                         </marquee>
                                     </ul>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
-				    
+
 				    <div class="col-md-9 ad-bd ad-pd-0">
 				    		<div class="n-m-b-heading"></div>
                     <div class="ad-pd">
@@ -148,42 +148,42 @@
                             <div id="change2" style="display: none;">
                             <h1 class="text-center"><span style="color:#a5011f"><b>Daily Rituals</b></span></h1>
                     <h4>
-                                <p> <span style="color:#a5011f;"> MORNING</span></p>                        
-                            5.00 : 
+                                <p> <span style="color:#a5011f;"> MORNING</span></p>
+                            5.00 :
                             PALLIYUNARTHU (WAKING OF THE GODDESS.)<br>
-                            5.10 : 
+                            5.10 :
                             NIRMALYADARSANAM<br>
-                            5.35 : 
+                            5.35 :
                             ABHISHEKAM (ABLUTIONS OF THE IDOL IN OIL, MILK ETC.)<br>
-                            5.45 : 
+                            5.45 :
                             GANAPATHY HOMAM (SPECIFIC OFFERING TO GOD VINAYAKA)<br>
-                            6.00 : 
+                            6.00 :
                             DEEPARADHANA (BURNING INCENSE AND LIGHTING LAMPS TO THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;HONOUR AND GLORY OF THE ALMIGHTY)<br>
-                            6.30 : 
+                            6.30 :
                             USHA POOJA (MORNING RITE)<br>
-                            6.40 : 
+                            6.40 :
                             DEEPARADHANA<br>
-                            8.30 : 
+                            8.30 :
                             NIVEDHYAM<br>
-                            9.00 : 
+                            9.00 :
                             PRASANNA POOJA<br>
-                            10.00 :  
+                            10.00 :
                             NIVEDHYAM<br>
-                            11.00 : 
+                            11.00 :
                             UCHA POOJA<br>
-                            11.30 : 
+                            11.30 :
                             NADA ADAKUNNU<br>
                             <br>
                             <br>
-                            <p> <span style="color:#a5011f;">EVENING</span></p> 
+                            <p> <span style="color:#a5011f;">EVENING</span></p>
                              5.00 : NADA THURAPPU (OPENING OF SREEKOVIL)<br>
-                            6.45 : 
+                            6.45 :
                             DEEPARADHANA<br>
-                            7.30 : 
+                            7.30 :
                             ATHAZHA POOJA (NIGHT RITE)<br>
-                            8.00 : 
+                            8.00 :
                             DEEPARADHANA (NIGHT RITE)<br>
-                            8.05 : 
+                            8.05 :
                             NADA ADAKUNNU<br>
                             <br>
                             <div class="alert alert-info" role="alert">
@@ -204,9 +204,9 @@
                             Contributions are welcome from individuals and organisations.
                             <br>
                             <br>
-                            <div class="alert alert-info" role="alert"> 
+                            <div class="alert alert-info" role="alert">
                             Cheques and drafts drawn in favour of <br>
-                            "Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST " 
+                            "Secretary, KESAVAPURAM SREEKRISHNA SWAMI TEMPLE TRUST "
                             <br> sent to the following address.
                             <br>
                             <br>
@@ -219,7 +219,7 @@
                             </div>
 
 
-                              
+
                             </h4>
                             </div>
                             <div id="change4" style="display:none;">
@@ -245,17 +245,13 @@
                             </div>
 
 				    </div>
-                        
+
 				    </div>
 				</div><!--row-->
 			</div><!--col-md-12-->
 		</div><!--Main div-->
-		@include('layouts.footer')
-		@include('layouts.audio')
-		
-	    <script src="/js/app.js"></script>
-	    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
-
-	     
+		@include('partials._footer')
+		@include('partials._audio')
+		@include('partials._js')
 	</body>
-</html>	
+</html>

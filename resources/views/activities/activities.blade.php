@@ -1,40 +1,9 @@
-<!DOCTYPE html>
- <html>
- <head>
- 	<title>Activites</title>
- 	     <nav class="navbar navbar-default">
-          <div class="box-shadow">
-            <div class="navbar navbar-inverse n-m-nav ad-mg-btm-0">
-              <h1><a href="/">KESAVAPURAM SREEKRISHNASWAMY TEMPLE</a></h1>
-            </div>
-          </div>
-        </nav>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('main')
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+@section('title', 'Activites')
 
-        <link rel="icon" href="{{asset('favicon.ico')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/side.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+@section('content')
 
-        <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
-
-        <!-- Scripts -->
-        <script>
-            window.Laravel = <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-            ]); ?>
-        </script>
- </head>
- <body>
- 
- </body>
-        
         <h1 class="text-center" style="color: #fff;">Activites</h1>
 
         <div class="col-md-8 col-md-offset-2">
@@ -47,7 +16,7 @@
                                 <b class="h3">GEETHACLASS</b>
                                 <div class="caret" style="float: right; margin-top: 4%;"></div>
                             </h4>
-                        </a> 
+                        </a>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
                         <div class="panel-body">
@@ -63,9 +32,9 @@
                             <h4 class="panel-title">
                                 <img class="img-circle" style="width: 10%;" src="{{asset('images/ganesh.jpg')}}"></span>
                                 <b class="h3">KSHETRA KALAPEEDOM</b>
-                                <div class="caret" style="float: right; margin-top: 4%;"></div>
+                                <span class="caret" style="float: right; margin-top: 4%;"></span>
                             </h4>
-                        </a> 
+                        </a>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                         <div class="panel-body">
@@ -83,7 +52,7 @@
                                 <b class="h3">VEDA CLASS</b>
                                 <div class="caret" style="float: right; margin-top: 4%;"></div>
                             </h4>
-                        </a> 
+                        </a>
                     </div>
                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                         <div class="panel-body">
@@ -101,7 +70,7 @@
                                 <b class="h3">NARAYANYEEAM PARAYANAM</b>
                                 <div class="caret" style="float: right; margin-top: 4%;"></div>
                             </h4>
-                        </a> 
+                        </a>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                         <div class="panel-body">
@@ -119,7 +88,7 @@
                                 <b class="h3">BHAGAVATHA PARAYANAM</b>
                                 <div class="caret" style="float: right; margin-top: 4%;"></div>
                             </h4>
-                        </a> 
+                        </a>
                     </div>
                     <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
                         <div class="panel-body">
@@ -129,9 +98,4 @@
                 </div>
             </div>
         </div>
-
- 	@include('layouts.footer')
- 	@include('layouts.audio')
-    <script src="/js/app.js"></script>
-        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
- </html>
+@endsection

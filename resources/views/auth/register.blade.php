@@ -81,6 +81,7 @@
     </div>
 </div>
 </div>
-@include('layouts.footer')
-@include('layouts.audio')
+@include('partials._footer')
+@include('partials._audio')
+@include('partials._js')
 @endsection
